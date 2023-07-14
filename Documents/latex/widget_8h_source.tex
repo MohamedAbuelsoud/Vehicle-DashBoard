@@ -1,0 +1,68 @@
+\doxysection{widget.\+h}
+\label{widget_8h_source}\index{Raspberry PI/GUI/widget.h@{Raspberry PI/GUI/widget.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ WIDGET\_H}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ WIDGET\_H}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QRadioButton>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QLCDNumber>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00025\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }Widget;\ \}}
+\DoxyCodeLine{00026\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }Widget\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ Widget(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00043\ \ \ \ \ \string~Widget();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ Ui::Widget\ *ui;}
+\DoxyCodeLine{00047\ \ \ \ \ QLabel\ *BackGround;}
+\DoxyCodeLine{00048\ \ \ \ \ QLabel\ *SpeedScale;}
+\DoxyCodeLine{00049\ \ \ \ \ QLabel\ *SpeedPointer;}
+\DoxyCodeLine{00050\ \ \ \ \ QPixmap\ SpeedScalepix;}
+\DoxyCodeLine{00051\ \ \ \ \ QLabel\ *EngineTemp;}
+\DoxyCodeLine{00052\ \ \ \ \ QLabel\ *TempScale;}
+\DoxyCodeLine{00053\ \ \ \ \ QPixmap\ TempScalepix;}
+\DoxyCodeLine{00054\ \ \ \ \ QLabel\ *TempPointer;}
+\DoxyCodeLine{00055\ \ \ \ \ QLabel\ *TempWarning;}
+\DoxyCodeLine{00056\ \ \ \ \ QLabel\ *Battery;}
+\DoxyCodeLine{00057\ \ \ \ \ QLabel\ *BatteryPercentage;}
+\DoxyCodeLine{00058\ \ \ \ \ QLabel\ *SeatBeltLightLogo;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ QLabel\ *AntiLockBrakeWarning;}
+\DoxyCodeLine{00061\ \ \ \ \ QLabel\ *FuelWarning;}
+\DoxyCodeLine{00062\ \ \ \ \ QLabel\ *FuelScale;}
+\DoxyCodeLine{00063\ \ \ \ \ QLabel\ *FuelPointer;}
+\DoxyCodeLine{00064\ \ \ \ \ QPixmap\ FuelScalepix;}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ SetBackground\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{void}\ SpeedInit\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ TempInit\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ FuelInit\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ BatteryInit\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ SeatbeltInit\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ AntiLockBrakeInit\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ SpeedUpdate\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ TempUpdate\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{void}\ FuelUpdate\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{void}\ BatteryUpdate\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ SeatbeltUpdate\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordtype}{void}\ AntiLockBrakeUpdate\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordtype}{void}\ WidgetvidUpdateValues(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00139\ \};}
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WIDGET\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,86 @@
+\doxysection{Raspberry PI/\+GUI/\+Raspi\+\_\+main.cpp File Reference}
+\label{_raspi__main_8cpp}\index{Raspberry PI/GUI/Raspi\_main.cpp@{Raspberry PI/GUI/Raspi\_main.cpp}}
+
+
+this main function is the entry point of the Raspberry pi code  
+
+
+{\ttfamily \#include \char`\"{}widget.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$QApplication$>$}\newline
+{\ttfamily \#include \char`\"{}UART.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ main} (int argc, char $\ast$argv[$\,$])
+\begin{DoxyCompactList}\small\item\em this main function is the entry point of the Raspberry pi code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+t \textbf{ thread1}
+\begin{DoxyCompactList}\small\item\em thread1 to run UART function on other thread \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this main function is the entry point of the Raspberry pi code 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_raspi__main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{Raspi\_main.cpp@{Raspi\_main.cpp}!main@{main}}
+\index{main@{main}!Raspi\_main.cpp@{Raspi\_main.cpp}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv[$\,$] }\end{DoxyParamCaption})}
+
+
+
+this main function is the entry point of the Raspberry pi code 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & how many input parameters from terminal call \\
+\hline
+{\em argv} & the input parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 if no error and -\/1 if there\textquotesingle{}s error 
+\end{DoxyReturn}
+The QApplication class manages the GUI application\textquotesingle{}s control flow and main settings. QApplication contains the main event loop, where all events from the window system and other sources are processed and dispatched. It also handles the application\textquotesingle{}s initialization, finalization, and provides session management. In addition, QApplication handles most of the system-\/wide and application-\/wide settings. For any GUI application using Qt, there is precisely one QApplication object, no matter whether the application has 0, 1, 2 or more windows at any given time. \begin{DoxyReturn}{Returns}
+QApplication
+\end{DoxyReturn}
+Widgets are the primary elements for creating user interfaces in Qt. Widgets can display data and status information, receive user input, and provide a container for other widgets that should be grouped together. A widget that is not embedded in a parent widget is called a window.
+
+to mask the cursor on screen
+
+\begin{DoxyReturn}{Returns}
+QCursor
+\end{DoxyReturn}
+Creating another thread to receive UART data
+
+to show widget at full screen
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_raspi__main_8cpp_a5ee2fa16b0442aa60586ebaaa1d7b2d6}} 
+\index{Raspi\_main.cpp@{Raspi\_main.cpp}!thread1@{thread1}}
+\index{thread1@{thread1}!Raspi\_main.cpp@{Raspi\_main.cpp}}
+\doxysubsubsection{thread1}
+{\footnotesize\ttfamily pthread\+\_\+t thread1}
+
+
+
+thread1 to run UART function on other thread 
+

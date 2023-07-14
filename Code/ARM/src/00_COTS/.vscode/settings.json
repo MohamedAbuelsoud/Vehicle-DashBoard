@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "lerror_states.h": "c",
+        "mgpio_private.h": "c",
+        "mgpio_interface.h": "c",
+        "mnvic_interface.h": "c",
+        "adc_interface.h": "c",
+        "lbit_math.h": "c",
+        "mexti_interface.h": "c",
+        "mexti_private.h": "c",
+        "mexti_config.h": "c",
+        "speed.h": "c",
+        "mstk_private.h": "c",
+        "lstd_types.h": "c"
+    }
+}

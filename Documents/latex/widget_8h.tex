@@ -1,0 +1,33 @@
+\doxysection{Raspberry PI/\+GUI/widget.h File Reference}
+\label{widget_8h}\index{Raspberry PI/GUI/widget.h@{Raspberry PI/GUI/widget.h}}
+
+
+module is responsible for data visualization. It uses QT frame work. First we designed the GUI structure and appearance and added the required objects then we added a timer as a signal to call a slot regularly. The slot is (Widgetvid\+Update\+Values) a function that updates data in GUI according to reading variables updated from UART module.  
+
+
+{\ttfamily \#include $<$QWidget$>$}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QRadio\+Button$>$}\newline
+{\ttfamily \#include $<$QLCDNumber$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \textbf{ Widget}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+module is responsible for data visualization. It uses QT frame work. First we designed the GUI structure and appearance and added the required objects then we added a timer as a signal to call a slot regularly. The slot is (Widgetvid\+Update\+Values) a function that updates data in GUI according to reading variables updated from UART module. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

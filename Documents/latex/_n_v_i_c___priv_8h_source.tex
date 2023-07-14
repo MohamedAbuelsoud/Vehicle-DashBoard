@@ -1,0 +1,43 @@
+\doxysection{NVIC\+\_\+\+Priv.\+h}
+\label{_n_v_i_c___priv_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC\_Priv.h@{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC\_Priv.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ NVIC\_PRIV\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ NVIC\_PRIV\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ NVIC\_BASE\_ADDRESS\ \ \ \ 0xE000E100}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ uint32\ ISER[8];\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ uint32\ RESERVED0[24];\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ uint32\ ICER[8];\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ uint32\ RSERVED1[24];\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ uint32\ ISPR[8];\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ uint32\ RESERVED2[24];\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ uint32\ ICPR[8];\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ uint32\ RESERVED3[24];\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ uint32\ IABR[8];\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ uint32\ RESERVED4[56];\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ uint8\ \ IPR[240];\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ uint32\ RESERVED5[580];\ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ uint32\ STIR;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \}\ NVIC\_t;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{/*******************************************************************************************************/}}
+\DoxyCodeLine{00039\ \textcolor{comment}{/*\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Struct\ Macros\ Base\ Address\ Of\ NVIC\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ */}}
+\DoxyCodeLine{00040\ \textcolor{comment}{/*******************************************************************************************************/}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ \ \ \ \ NVIC\_REG\ \ \ \ ((volatile\ NVIC\_t*)(NVIC\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ \ \ \ \ SCB\_AIRCR\ \ \ (*(volatile\ uint32*)\ 0xE000ED0C)}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ \ \ \ \ VECTKEY\ \ \ \ \ 0x05FA0000}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,80 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/02\+\_\+\+HAL/\+Time/\+Time.c File Reference}
+\label{_time_8c}\index{ARM/src/00\_COTS/02\_HAL/Time/Time.c@{ARM/src/00\_COTS/02\_HAL/Time/Time.c}}
+
+
+Program file for Time Layer for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/02\+\_\+\+SYSTICK/\+SYSTICK.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Time.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Update\+\_\+\+Time} ()
+\begin{DoxyCompactList}\small\item\em Update Time. \end{DoxyCompactList}\item 
+void \textbf{ Time\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Initialization Function. \end{DoxyCompactList}\item 
+float64 \textbf{ Get\+\_\+\+Time} (void)
+\begin{DoxyCompactList}\small\item\em Get time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_time_8c_a99f0cda8357eaace29f67f3e3c733d4a}} 
+float64 {\bfseries Ticks\+\_\+\+Count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for Time Layer for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_time_8c_ae59e3858db7e47e9814320118daf132d}} 
+\index{Time.c@{Time.c}!Get\_Time@{Get\_Time}}
+\index{Get\_Time@{Get\_Time}!Time.c@{Time.c}}
+\doxysubsubsection{Get\_Time()}
+{\footnotesize\ttfamily float64 Get\+\_\+\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get time. 
+
+\begin{DoxyReturn}{Returns}
+float64 calculated time ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\label{_time_8c_aa8634093ae2ed31a84e1c867b83b1ec8}} 
+\index{Time.c@{Time.c}!Time\_Init@{Time\_Init}}
+\index{Time\_Init@{Time\_Init}!Time.c@{Time.c}}
+\doxysubsubsection{Time\_Init()}
+{\footnotesize\ttfamily void Time\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialization Function. 
+
+\mbox{\label{_time_8c_a0a919b39c461bbeb46e41bba12902713}} 
+\index{Time.c@{Time.c}!Update\_Time@{Update\_Time}}
+\index{Update\_Time@{Update\_Time}!Time.c@{Time.c}}
+\doxysubsubsection{Update\_Time()}
+{\footnotesize\ttfamily void Update\+\_\+\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update Time. 
+

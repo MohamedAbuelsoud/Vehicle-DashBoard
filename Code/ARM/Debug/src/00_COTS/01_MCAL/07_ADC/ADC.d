@@ -1,0 +1,16 @@
+src/00_COTS/01_MCAL/07_ADC/ADC.o: ../src/00_COTS/01_MCAL/07_ADC/ADC.c \
+ ../src/00_COTS/01_MCAL/07_ADC/../../00_LIB/BIT_MATH.h \
+ ../src/00_COTS/01_MCAL/07_ADC/../../00_LIB/STD_TYPES.h \
+ ../src/00_COTS/01_MCAL/07_ADC/../07_ADC/ADC.h \
+ ../src/00_COTS/01_MCAL/07_ADC/../07_ADC/ADC_priv.h \
+ ../src/00_COTS/01_MCAL/07_ADC/../07_ADC/ADC_cfg.h
+
+../src/00_COTS/01_MCAL/07_ADC/../../00_LIB/BIT_MATH.h:
+
+../src/00_COTS/01_MCAL/07_ADC/../../00_LIB/STD_TYPES.h:
+
+../src/00_COTS/01_MCAL/07_ADC/../07_ADC/ADC.h:
+
+../src/00_COTS/01_MCAL/07_ADC/../07_ADC/ADC_priv.h:
+
+../src/00_COTS/01_MCAL/07_ADC/../07_ADC/ADC_cfg.h:

@@ -1,0 +1,146 @@
+\doxysection{Raspberry PI/\+GUI/\+UART.cpp File Reference}
+\label{_u_a_r_t_8cpp}\index{Raspberry PI/GUI/UART.cpp@{Raspberry PI/GUI/UART.cpp}}
+
+
+UART Module is for communication with the other ECU through UART. It\textquotesingle{}s responsible for receiving data and updating reading values. It consists of two functions. First one (UARTvid\+Init) is a UART initialization function to setup the required configuration. Second one (UARTvid\+Receive) is a function that receives data from UART and assign it to reading.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ UARTvid\+Init} (void)
+\begin{DoxyCompactList}\small\item\em UART initialization function to setup the required configuration in Raspberry pi. \end{DoxyCompactList}\item 
+void $\ast$ \textbf{ UARTvid\+Receive} (void $\ast$)
+\begin{DoxyCompactList}\small\item\em a Function that receives data from UART and assign it to reading \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_u_a_r_t_8cpp_a3be0d3c2ebcbd628c89bdd22fdf2c36a}} 
+uint32 {\bfseries sfd}
+\item 
+uint8 \textbf{ u8\+Speed\+Value}
+\begin{DoxyCompactList}\small\item\em Variable resembles speed. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Temp\+Value}
+\begin{DoxyCompactList}\small\item\em Variable resembles temperature. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Battery\+Value}
+\begin{DoxyCompactList}\small\item\em Variable resembles battery. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Fuel\+Value}
+\begin{DoxyCompactList}\small\item\em Variable resembles fuel. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Anti\+Lock\+Flag}
+\begin{DoxyCompactList}\small\item\em Variable resembles antilock flag. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Seat\+Belt\+Flag}
+\begin{DoxyCompactList}\small\item\em Variable resembles seatbelt flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+UART Module is for communication with the other ECU through UART. It\textquotesingle{}s responsible for receiving data and updating reading values. It consists of two functions. First one (UARTvid\+Init) is a UART initialization function to setup the required configuration. Second one (UARTvid\+Receive) is a function that receives data from UART and assign it to reading. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_u_a_r_t_8cpp_ae514621bf2af185863ea2c03969c661a}} 
+\index{UART.cpp@{UART.cpp}!UARTvidInit@{UARTvidInit}}
+\index{UARTvidInit@{UARTvidInit}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{UARTvidInit()}
+{\footnotesize\ttfamily void UARTvid\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+UART initialization function to setup the required configuration in Raspberry pi. 
+
+\mbox{\label{_u_a_r_t_8cpp_a87c4237c2c68265ab21ac73018489350}} 
+\index{UART.cpp@{UART.cpp}!UARTvidReceive@{UARTvidReceive}}
+\index{UARTvidReceive@{UARTvidReceive}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{UARTvidReceive()}
+{\footnotesize\ttfamily void $\ast$ UARTvid\+Receive (\begin{DoxyParamCaption}\item[{void $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+a Function that receives data from UART and assign it to reading 
+
+\begin{DoxyReturn}{Returns}
+void$\ast$ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_u_a_r_t_8cpp_a16b12d1be1e810e66d16fa2c41c0a310}} 
+\index{UART.cpp@{UART.cpp}!u8AntiLockFlag@{u8AntiLockFlag}}
+\index{u8AntiLockFlag@{u8AntiLockFlag}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{u8AntiLockFlag}
+{\footnotesize\ttfamily uint8 u8\+Anti\+Lock\+Flag\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable resembles antilock flag. 
+
+\mbox{\label{_u_a_r_t_8cpp_a9d9e31ad48728880322160d4c494812b}} 
+\index{UART.cpp@{UART.cpp}!u8BatteryValue@{u8BatteryValue}}
+\index{u8BatteryValue@{u8BatteryValue}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{u8BatteryValue}
+{\footnotesize\ttfamily uint8 u8\+Battery\+Value\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable resembles battery. 
+
+\mbox{\label{_u_a_r_t_8cpp_a1e6e75d4fe5d7d15953545b0022819c4}} 
+\index{UART.cpp@{UART.cpp}!u8FuelValue@{u8FuelValue}}
+\index{u8FuelValue@{u8FuelValue}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{u8FuelValue}
+{\footnotesize\ttfamily uint8 u8\+Fuel\+Value\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable resembles fuel. 
+
+\mbox{\label{_u_a_r_t_8cpp_aca6403148b03b4d90a94e2390ce00ecd}} 
+\index{UART.cpp@{UART.cpp}!u8SeatBeltFlag@{u8SeatBeltFlag}}
+\index{u8SeatBeltFlag@{u8SeatBeltFlag}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{u8SeatBeltFlag}
+{\footnotesize\ttfamily uint8 u8\+Seat\+Belt\+Flag\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable resembles seatbelt flag. 
+
+\mbox{\label{_u_a_r_t_8cpp_a5694b2ca2299d3762c50d94b12da1291}} 
+\index{UART.cpp@{UART.cpp}!u8SpeedValue@{u8SpeedValue}}
+\index{u8SpeedValue@{u8SpeedValue}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{u8SpeedValue}
+{\footnotesize\ttfamily uint8 u8\+Speed\+Value\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable resembles speed. 
+
+\mbox{\label{_u_a_r_t_8cpp_a35da1bc644661b577f9e9191651b5506}} 
+\index{UART.cpp@{UART.cpp}!u8TempValue@{u8TempValue}}
+\index{u8TempValue@{u8TempValue}!UART.cpp@{UART.cpp}}
+\doxysubsubsection{u8TempValue}
+{\footnotesize\ttfamily uint8 u8\+Temp\+Value\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Variable resembles temperature. 
+

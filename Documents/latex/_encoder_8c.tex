@@ -1,0 +1,70 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/02\+\_\+\+HAL/\+ENCODER/\+Encoder.c File Reference}
+\label{_encoder_8c}\index{ARM/src/00\_COTS/02\_HAL/ENCODER/Encoder.c@{ARM/src/00\_COTS/02\_HAL/ENCODER/Encoder.c}}
+
+
+Program file for Encoder Layer for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/00\+\_\+\+RCC/\+RCC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/01\+\_\+\+GPIO/\+GPIO.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/03\+\_\+\+NVIC/\+NVIC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/04\+\_\+\+EXTI/\+EXTI.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Encoder.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Update\+Encoder\+Counts} ()
+\begin{DoxyCompactList}\small\item\em Update Count. \end{DoxyCompactList}\item 
+void \textbf{ Encoder\+\_\+\+Init} ()
+\begin{DoxyCompactList}\small\item\em Initialization Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_encoder_8c_a3a369fa3aa5622b18db21261a7af3ac7}} 
+volatile uint32 {\bfseries Encoder\+\_\+\+Counts}
+\item 
+\mbox{\label{_encoder_8c_a20475fd95fa741e440c4b7eb74249ea0}} 
+NVIC\+\_\+\+Group\+Mode\+\_\+t {\bfseries Group\+\_\+\+Sub\+Group} =NVIC\+\_\+\+Group\+Mode\+\_\+g16s0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for Encoder Layer for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_encoder_8c_adb6f70a883e074460dea429457657cbc}} 
+\index{Encoder.c@{Encoder.c}!Encoder\_Init@{Encoder\_Init}}
+\index{Encoder\_Init@{Encoder\_Init}!Encoder.c@{Encoder.c}}
+\doxysubsubsection{Encoder\_Init()}
+{\footnotesize\ttfamily void Encoder\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialization Function. 
+
+\mbox{\label{_encoder_8c_a8464b84cbe8905647106c9a6672fd5f4}} 
+\index{Encoder.c@{Encoder.c}!UpdateEncoderCounts@{UpdateEncoderCounts}}
+\index{UpdateEncoderCounts@{UpdateEncoderCounts}!Encoder.c@{Encoder.c}}
+\doxysubsubsection{UpdateEncoderCounts()}
+{\footnotesize\ttfamily void Update\+Encoder\+Counts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update Count. 
+

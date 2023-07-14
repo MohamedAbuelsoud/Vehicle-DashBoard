@@ -1,0 +1,133 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/07\+\_\+\+ADC/\+ADC\+\_\+priv.h File Reference}
+\label{_a_d_c__priv_8h}\index{ARM/src/00\_COTS/01\_MCAL/07\_ADC/ADC\_priv.h@{ARM/src/00\_COTS/01\_MCAL/07\_ADC/ADC\_priv.h}}
+
+
+Private file for ADC driver for stm32f401cc.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ ADC\+\_\+\+Mem\+Map}
+\item 
+struct \textbf{ ADC\+\_\+\+Common\+\_\+reg}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_a_d_c__priv_8h_a30733dac1d9f9ef820d794565f410cb1}} 
+\#define {\bfseries ADC\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40012000
+\item 
+\mbox{\label{_a_d_c__priv_8h_af0f7ac4025d1623cda58f7656fcffade}} 
+\#define {\bfseries ADC\+\_\+\+ENABLE}~1
+\item 
+\mbox{\label{_a_d_c__priv_8h_adc5911f4f1e4a81fb3381359bf74e4c2}} 
+\#define {\bfseries ADC\+\_\+\+DISABLE}~0
+\item 
+\mbox{\label{_a_d_c__priv_8h_ac1c41d620b2ca698d257aaa1f6de82e5}} 
+\#define {\bfseries ADC\+\_\+\+RESOLUTION\+\_\+12\+BIT}~0b00
+\item 
+\mbox{\label{_a_d_c__priv_8h_adad68ae96e01445e33b2ca91be2d5db2}} 
+\#define {\bfseries ADC\+\_\+\+RESOLUTION\+\_\+10\+BIT}~0b01
+\item 
+\mbox{\label{_a_d_c__priv_8h_a602571a2293ba97c8a6177277c0e11c9}} 
+\#define {\bfseries ADC\+\_\+\+RESOLUTION\+\_\+8\+BIT}~0b10
+\item 
+\mbox{\label{_a_d_c__priv_8h_ab9f79035f9896298e64fdcb4f1bf6466}} 
+\#define {\bfseries ADC\+\_\+\+RESOLUTION\+\_\+6\+BIT}~0b11
+\item 
+\mbox{\label{_a_d_c__priv_8h_a77b555f440725395699f70fcb7c0255e}} 
+\#define {\bfseries ADC\+\_\+\+RIGHT\+\_\+\+ALLIGNMENT}~0
+\item 
+\mbox{\label{_a_d_c__priv_8h_a39937abf6e984ccea4a946095a987281}} 
+\#define {\bfseries ADC\+\_\+\+LEFT\+\_\+\+ALLIGNMENT}~1
+\item 
+\mbox{\label{_a_d_c__priv_8h_a8ca760c22d5523d93c1413d21bd5a8cf}} 
+\#define {\bfseries ADC\+\_\+\+AFTER\+\_\+\+REGULAR\+\_\+\+CHANNELS}~0
+\item 
+\mbox{\label{_a_d_c__priv_8h_a798bf9726a8c719bf46d975e220acd3e}} 
+\#define {\bfseries ADC\+\_\+\+AFTER\+\_\+\+EACH\+\_\+\+CONVERSION}~1
+\item 
+\mbox{\label{_a_d_c__priv_8h_a493d9f4ffa8492d2aef3aa092261e8f2}} 
+\#define {\bfseries ADC\+\_\+\+DMA\+\_\+\+SINGLE\+\_\+\+COPY}~0
+\item 
+\mbox{\label{_a_d_c__priv_8h_a03f338b30b250cd1a81d7d3c26367e62}} 
+\#define {\bfseries ADC\+\_\+\+DMA\+\_\+\+FREE\+\_\+\+RUNNING\+\_\+\+COPY}~1
+\item 
+\mbox{\label{_a_d_c__priv_8h_ac4216b7403f359494499e24e1ad7e0c2}} 
+\#define {\bfseries ADC\+\_\+\+SINGLE\+\_\+\+SHOT}~0
+\item 
+\mbox{\label{_a_d_c__priv_8h_a2513ec19be6ca5e7d7eff41f39fdb2a6}} 
+\#define {\bfseries ADC\+\_\+\+CONTINOUS}~1
+\item 
+\mbox{\label{_a_d_c__priv_8h_ac1fae6ab8bacf9b3a991f9196945edb1}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+3\+\_\+\+CYCLES}~0b000
+\item 
+\mbox{\label{_a_d_c__priv_8h_a4fd6232dd6164a467426acdceedc9994}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+15\+\_\+\+CYCLES}~0b001
+\item 
+\mbox{\label{_a_d_c__priv_8h_ac48b18256eca95f06fadd9d746ebb63a}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+28\+\_\+\+CYCLES}~0b010
+\item 
+\mbox{\label{_a_d_c__priv_8h_a2034025f8e12e8d4f8b3552771dc84f9}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+56\+\_\+\+CYCLES}~0b011
+\item 
+\mbox{\label{_a_d_c__priv_8h_ac393f56a98a7ff3c3e05294274327cb3}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+84\+\_\+\+CYCLES}~0b100
+\item 
+\mbox{\label{_a_d_c__priv_8h_a8da1cc92c7f4e9d9d287966b9d1a3b17}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+112\+\_\+\+CYCLES}~0b101
+\item 
+\mbox{\label{_a_d_c__priv_8h_af011aa287e77fc7e8e51d8bf03db26db}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+144\+\_\+\+CYCLES}~0b110
+\item 
+\mbox{\label{_a_d_c__priv_8h_a940faa42905b145959b12187321dbdab}} 
+\#define {\bfseries ADC\+\_\+\+SAMPLE\+\_\+480\+\_\+\+CYCLES}~0b111
+\item 
+\mbox{\label{_a_d_c__priv_8h_a099a948d31332f673eb7e2dcfaec6489}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+0}~0
+\item 
+\mbox{\label{_a_d_c__priv_8h_a754f9b7ea6aad9f8f709d855416b8798}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+1}~1
+\item 
+\mbox{\label{_a_d_c__priv_8h_a4e1ea43b51bb2ddcc75bad35101b6ac5}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+2}~2
+\item 
+\mbox{\label{_a_d_c__priv_8h_a37dc40caf513a72b23ce79d8a22521cf}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+3}~3
+\item 
+\mbox{\label{_a_d_c__priv_8h_a7223ed4748241f46b11f0b425b973076}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+4}~4
+\item 
+\mbox{\label{_a_d_c__priv_8h_a0996eb6b3d7e2b24f24dab1e2f2837f4}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+5}~5
+\item 
+\mbox{\label{_a_d_c__priv_8h_a675765c1441834cb73e8ac3915137943}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+6}~6
+\item 
+\mbox{\label{_a_d_c__priv_8h_ac6e1de6a97d834a75932c4979650101e}} 
+\#define {\bfseries ADC\+\_\+\+CHANELL\+\_\+7}~7
+\item 
+\mbox{\label{_a_d_c__priv_8h_a54d148b91f3d356713f7e367a2243bea}} 
+\#define {\bfseries ADC}~((volatile \textbf{ ADC\+\_\+\+Mem\+Map}$\ast$ ) (ADC\+\_\+\+BASE\+\_\+\+ADDRESS))
+\item 
+\mbox{\label{_a_d_c__priv_8h_a435a3a89417f788d4d23f161c01bda5f}} 
+\#define {\bfseries ADC\+\_\+\+COMMON}~((volatile \textbf{ ADC\+\_\+\+Common\+\_\+reg}$\ast$ )(ADC\+\_\+\+BASE\+\_\+\+ADDRESS + 0x300))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Private file for ADC driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

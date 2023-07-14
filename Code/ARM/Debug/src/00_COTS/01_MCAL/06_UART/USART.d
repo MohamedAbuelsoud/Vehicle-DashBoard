@@ -1,0 +1,17 @@
+src/00_COTS/01_MCAL/06_UART/USART.o: \
+ ../src/00_COTS/01_MCAL/06_UART/USART.c \
+ ../src/00_COTS/01_MCAL/06_UART/../../00_LIB/STD_Types.h \
+ ../src/00_COTS/01_MCAL/06_UART/../../00_LIB/BIT_Math.h \
+ ../src/00_COTS/01_MCAL/06_UART/USART.h \
+ ../src/00_COTS/01_MCAL/06_UART/USART_cfg.h \
+ ../src/00_COTS/01_MCAL/06_UART/USART_priv.h
+
+../src/00_COTS/01_MCAL/06_UART/../../00_LIB/STD_Types.h:
+
+../src/00_COTS/01_MCAL/06_UART/../../00_LIB/BIT_Math.h:
+
+../src/00_COTS/01_MCAL/06_UART/USART.h:
+
+../src/00_COTS/01_MCAL/06_UART/USART_cfg.h:
+
+../src/00_COTS/01_MCAL/06_UART/USART_priv.h:

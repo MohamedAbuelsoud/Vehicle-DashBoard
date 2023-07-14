@@ -1,0 +1,53 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/04\+\_\+\+EXTI/\+EXTI\+\_\+priv.h File Reference}
+\label{_e_x_t_i__priv_8h}\index{ARM/src/00\_COTS/01\_MCAL/04\_EXTI/EXTI\_priv.h@{ARM/src/00\_COTS/01\_MCAL/04\_EXTI/EXTI\_priv.h}}
+
+
+Private file for EXTI driver for stm32f401cc.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ EXTI\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_aae6b556486f47ea6b8af98eb6f70fb2d}} 
+\#define {\bfseries Base\+\_\+\+Adress\+\_\+\+EXTI}~0x40013\+C00
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_a55e119f87c84a7b1b9ba01c2ec3a6b4f}} 
+\#define {\bfseries SYSCFG\+\_\+\+EXTICR1}~($\ast$(volatile uint32$\ast$)(0x40013808))
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_aa66913030919c0b18d445554032a0c82}} 
+\#define {\bfseries EXTI\+\_\+\+CONFG\+\_\+\+MASK1}~0x\+FFFFFFF0\+UL
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_ac20e6c3151c9fdc84b7d8f40cbf47ffc}} 
+\#define {\bfseries EXTI\+\_\+\+CONFG\+\_\+\+MASK2}~0x\+FFFFFF0\+FUL
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_a6416c27ea1628eec43ad03ccf45fa5b0}} 
+\#define {\bfseries EXTI\+\_\+\+CONFG\+\_\+\+MASK3}~0x\+FFFFF0\+FFUL
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_ad981e2a48b011f261023fb28f15ec359}} 
+\#define {\bfseries EXTI\+\_\+\+CONFG\+\_\+\+MASK4}~0x\+FFFF0\+FFFUL
+\item 
+\mbox{\label{_e_x_t_i__priv_8h_a5b7b3fee478fdb33d2f7ef2c80171e59}} 
+\#define {\bfseries EXTI\+\_\+\+Ptr}~(( volatile  \textbf{ EXTI\+\_\+t} $\ast$ ) Base\+\_\+\+Adress\+\_\+\+EXTI )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Private file for EXTI driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

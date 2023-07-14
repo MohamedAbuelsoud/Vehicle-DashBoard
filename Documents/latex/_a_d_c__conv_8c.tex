@@ -1,0 +1,112 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/02\+\_\+\+HAL/\+ADC\+\_\+conversion/\+ADC\+\_\+conv.c File Reference}
+\label{_a_d_c__conv_8c}\index{ARM/src/00\_COTS/02\_HAL/ADC\_conversion/ADC\_conv.c@{ARM/src/00\_COTS/02\_HAL/ADC\_conversion/ADC\_conv.c}}
+
+
+Program file for ADC Service Layer for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/00\+\_\+\+RCC/\+RCC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/01\+\_\+\+GPIO/\+GPIO.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/07\+\_\+\+ADC/\+ADC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/05\+\_\+\+DMA/\+DMA.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ADC\+\_\+conv.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ ADC\+\_\+\+CONV\+\_\+\+Void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Initialize ADC Service. \end{DoxyCompactList}\item 
+uint32 \textbf{ ADC\+\_\+\+CONV\+\_\+u32\+Get\+First\+Chanel\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Get first channel data. \end{DoxyCompactList}\item 
+uint32 \textbf{ ADC\+\_\+\+CONV\+\_\+u32\+Get\+Second\+Chanel\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Get second channel data. \end{DoxyCompactList}\item 
+uint32 \textbf{ ADC\+\_\+\+CONV\+\_\+u32\+Get\+Third\+Chanel\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Get third channel data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32 \textbf{ ADC\+\_\+data} [3] =\{0,0,0\}
+\begin{DoxyCompactList}\small\item\em Array to Receive ADC Readings from 3 channels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for ADC Service Layer for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_a_d_c__conv_8c_a165ca1742d1952e9578fa00204767c40}} 
+\index{ADC\_conv.c@{ADC\_conv.c}!ADC\_CONV\_u32GetFirstChanelData@{ADC\_CONV\_u32GetFirstChanelData}}
+\index{ADC\_CONV\_u32GetFirstChanelData@{ADC\_CONV\_u32GetFirstChanelData}!ADC\_conv.c@{ADC\_conv.c}}
+\doxysubsubsection{ADC\_CONV\_u32GetFirstChanelData()}
+{\footnotesize\ttfamily uint32 ADC\+\_\+\+CONV\+\_\+u32\+Get\+First\+Chanel\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get first channel data. 
+
+\begin{DoxyReturn}{Returns}
+uint32 data 
+\end{DoxyReturn}
+\mbox{\label{_a_d_c__conv_8c_af989d7a7cb4ad03cb741d286878ddb70}} 
+\index{ADC\_conv.c@{ADC\_conv.c}!ADC\_CONV\_u32GetSecondChanelData@{ADC\_CONV\_u32GetSecondChanelData}}
+\index{ADC\_CONV\_u32GetSecondChanelData@{ADC\_CONV\_u32GetSecondChanelData}!ADC\_conv.c@{ADC\_conv.c}}
+\doxysubsubsection{ADC\_CONV\_u32GetSecondChanelData()}
+{\footnotesize\ttfamily uint32 ADC\+\_\+\+CONV\+\_\+u32\+Get\+Second\+Chanel\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get second channel data. 
+
+\begin{DoxyReturn}{Returns}
+uint32 data 
+\end{DoxyReturn}
+\mbox{\label{_a_d_c__conv_8c_ac09adf1ddd9a872deedda9ef3b05e767}} 
+\index{ADC\_conv.c@{ADC\_conv.c}!ADC\_CONV\_u32GetThirdChanelData@{ADC\_CONV\_u32GetThirdChanelData}}
+\index{ADC\_CONV\_u32GetThirdChanelData@{ADC\_CONV\_u32GetThirdChanelData}!ADC\_conv.c@{ADC\_conv.c}}
+\doxysubsubsection{ADC\_CONV\_u32GetThirdChanelData()}
+{\footnotesize\ttfamily uint32 ADC\+\_\+\+CONV\+\_\+u32\+Get\+Third\+Chanel\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get third channel data. 
+
+\begin{DoxyReturn}{Returns}
+uint32 data 
+\end{DoxyReturn}
+\mbox{\label{_a_d_c__conv_8c_a74be82cfbf83c05555dcddc390a72e8b}} 
+\index{ADC\_conv.c@{ADC\_conv.c}!ADC\_CONV\_VoidInit@{ADC\_CONV\_VoidInit}}
+\index{ADC\_CONV\_VoidInit@{ADC\_CONV\_VoidInit}!ADC\_conv.c@{ADC\_conv.c}}
+\doxysubsubsection{ADC\_CONV\_VoidInit()}
+{\footnotesize\ttfamily void ADC\+\_\+\+CONV\+\_\+\+Void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize ADC Service. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_a_d_c__conv_8c_af70563e771316f8114ca8c602e3dd7a6}} 
+\index{ADC\_conv.c@{ADC\_conv.c}!ADC\_data@{ADC\_data}}
+\index{ADC\_data@{ADC\_data}!ADC\_conv.c@{ADC\_conv.c}}
+\doxysubsubsection{ADC\_data}
+{\footnotesize\ttfamily uint32 ADC\+\_\+data[3] =\{0,0,0\}}
+
+
+
+Array to Receive ADC Readings from 3 channels. 
+

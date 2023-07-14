@@ -1,0 +1,149 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/\+ARM\+\_\+main.c File Reference}
+\label{_a_r_m__main_8c}\index{ARM/src/00\_COTS/ARM\_main.c@{ARM/src/00\_COTS/ARM\_main.c}}
+
+
+this main function is the entry point of the ARM code  
+
+
+{\ttfamily \#include \char`\"{}00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}02\+\_\+\+HAL/\+System\+\_\+\+Init/\+System\+\_\+init.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}04\+\_\+\+SERVICE/\+Temp/\+Temp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}04\+\_\+\+SERVICE/\+BMS/\+BMS.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}04\+\_\+\+SERVICE/\+Fuel/\+Fuel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}04\+\_\+\+SERVICE/\+Speed/\+Speed.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ main} (void)
+\begin{DoxyCompactList}\small\item\em this main function is the entry point of the ARM code \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8 \textbf{ Temp} =0
+\begin{DoxyCompactList}\small\item\em Temperature Reading. \end{DoxyCompactList}\item 
+uint8 \textbf{ Fuel} =0
+\begin{DoxyCompactList}\small\item\em Fuel Reading. \end{DoxyCompactList}\item 
+uint8 \textbf{ Bms} =0
+\begin{DoxyCompactList}\small\item\em Battery Reading. \end{DoxyCompactList}\item 
+uint8 \textbf{ Speed} =0
+\begin{DoxyCompactList}\small\item\em Speed Reading. \end{DoxyCompactList}\item 
+uint8 \textbf{ ABS} =0
+\begin{DoxyCompactList}\small\item\em ABS Reading. \end{DoxyCompactList}\item 
+uint8 \textbf{ Seat\+Belt} =0
+\begin{DoxyCompactList}\small\item\em Seat Belt Reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this main function is the entry point of the ARM code 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_a_r_m__main_8c_a6288eba0f8e8ad3ab1544ad731eb7667}} 
+\index{ARM\_main.c@{ARM\_main.c}!main@{main}}
+\index{main@{main}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+this main function is the entry point of the ARM code 
+
+Get Temperature Reading
+
+Send Temperature Reading through UART
+
+Get Fuel Reading
+
+Send Fuel Reading through UART
+
+Get Battery Reading
+
+Send Battery Reading through UART
+
+Get Speed Reading
+
+Send Speed Reading through UART
+
+Get ABS READING
+
+Send ABS Reading through UART
+
+Get Seat\+Belt Reading
+
+Send Seatbelt Reading through UART
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{_a_r_m__main_8c_a30b379b2eb6d75ccb815ff48e1c4ae6c}} 
+\index{ARM\_main.c@{ARM\_main.c}!ABS@{ABS}}
+\index{ABS@{ABS}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{ABS}
+{\footnotesize\ttfamily uint8 ABS =0}
+
+
+
+ABS Reading. 
+
+\mbox{\label{_a_r_m__main_8c_a4c5cd8e98b7251af37009a473041f68f}} 
+\index{ARM\_main.c@{ARM\_main.c}!Bms@{Bms}}
+\index{Bms@{Bms}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{Bms}
+{\footnotesize\ttfamily uint8 Bms =0}
+
+
+
+Battery Reading. 
+
+\mbox{\label{_a_r_m__main_8c_a33d6f6e80c2bb3a20400663e39c2cb61}} 
+\index{ARM\_main.c@{ARM\_main.c}!Fuel@{Fuel}}
+\index{Fuel@{Fuel}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{Fuel}
+{\footnotesize\ttfamily uint8 Fuel =0}
+
+
+
+Fuel Reading. 
+
+\mbox{\label{_a_r_m__main_8c_a9efa00b5dae5e1537edb1c41b73deb28}} 
+\index{ARM\_main.c@{ARM\_main.c}!SeatBelt@{SeatBelt}}
+\index{SeatBelt@{SeatBelt}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{SeatBelt}
+{\footnotesize\ttfamily uint8 Seat\+Belt =0}
+
+
+
+Seat Belt Reading. 
+
+\mbox{\label{_a_r_m__main_8c_a2086864522a7bdf2603f5a19254376f0}} 
+\index{ARM\_main.c@{ARM\_main.c}!Speed@{Speed}}
+\index{Speed@{Speed}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{Speed}
+{\footnotesize\ttfamily uint8 Speed =0}
+
+
+
+Speed Reading. 
+
+\mbox{\label{_a_r_m__main_8c_ababba8d38ac9bb75236adb13e68d8e29}} 
+\index{ARM\_main.c@{ARM\_main.c}!Temp@{Temp}}
+\index{Temp@{Temp}!ARM\_main.c@{ARM\_main.c}}
+\doxysubsubsection{Temp}
+{\footnotesize\ttfamily uint8 Temp =0}
+
+
+
+Temperature Reading. 
+

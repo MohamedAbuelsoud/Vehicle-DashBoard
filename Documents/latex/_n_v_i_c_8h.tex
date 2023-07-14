@@ -1,0 +1,258 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/03\+\_\+\+NVIC/\+NVIC.h File Reference}
+\label{_n_v_i_c_8h}\index{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC.h@{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC.h}}
+
+
+Interface file for NVIC driver for stm32f401cc.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_n_v_i_c_8h_a9821fd01757986612ddb8982e2fe27f1}} 
+\#define {\bfseries WWDG}~0
+\item 
+\mbox{\label{_n_v_i_c_8h_aaa968ddcdcd3b871f699ad4e1424a806}} 
+\#define {\bfseries NVIC\+\_\+\+EXTI0}~6
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_n_v_i_c_8h_a212d33460cbfe841fa401aff8808ef8f}} 
+enum {\bfseries NVIC\+\_\+\+Group\+Mode\+\_\+t} \{ \newline
+{\bfseries NVIC\+\_\+\+Group\+Mode\+\_\+g16s0} = 3
+, {\bfseries NVIC\+\_\+\+Group\+Mode\+\_\+g8s2}
+, {\bfseries NVIC\+\_\+\+Group\+Mode\+\_\+g4s4}
+, {\bfseries NVIC\+\_\+\+Group\+Mode\+\_\+g2s8}
+, \newline
+{\bfseries NVIC\+\_\+\+Group\+Mode\+\_\+g0s16}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ NVIC\+\_\+void\+Enable\+Interrupt} (uint8 copy\+\_\+u8\+Int\+Num)
+\begin{DoxyCompactList}\small\item\em Enable peripheral Interrupt. \end{DoxyCompactList}\item 
+void \textbf{ NVIC\+\_\+void\+Disable\+Interrupt} (uint8 copy\+\_\+u8\+Int\+Num)
+\begin{DoxyCompactList}\small\item\em Disable peripheral Interrupt. \end{DoxyCompactList}\item 
+void \textbf{ NVIC\+\_\+void\+Enable\+Interrupt\+Pending} (uint8 copy\+\_\+u8\+Int\+Num)
+\begin{DoxyCompactList}\small\item\em Enable Interrupt Pending. \end{DoxyCompactList}\item 
+void \textbf{ NVIC\+\_\+void\+Disable\+Interrupt\+Pinding} (uint8 copy\+\_\+u8\+Int\+Num)
+\begin{DoxyCompactList}\small\item\em Disable Interrupt Pending. \end{DoxyCompactList}\item 
+uint8 \textbf{ NVIC\+\_\+u8\+Is\+Interrupt\+Active} (uint8 copy\+\_\+u8\+Int\+Num)
+\begin{DoxyCompactList}\small\item\em A function to check weather the pripheral interrupt active or not. \end{DoxyCompactList}\item 
+void \textbf{ NVIC\+\_\+void\+Set\+Interrupt\+Priority} (uint8 copy\+\_\+u8\+Int\+Num, NVIC\+\_\+\+Group\+Mode\+\_\+t copy\+\_\+\+Grop\+Mode, uint8 copy\+\_\+u8\+Int\+Group, uint8 copy\+\_\+u8\+Int\+Prio)
+\begin{DoxyCompactList}\small\item\em A function to adjust Interrupt Priority. \end{DoxyCompactList}\item 
+void \textbf{ NVIC\+\_\+void\+Init\+Interrupt\+Group} (NVIC\+\_\+\+Group\+Mode\+\_\+t copy\+\_\+\+Grop\+Mode)
+\begin{DoxyCompactList}\small\item\em Initialize Interrupt Group. \end{DoxyCompactList}\item 
+void \textbf{ NVIC\+\_\+void\+Generate\+Software\+Interrupt} (uint8 copy\+\_\+u8\+Int\+Num)
+\begin{DoxyCompactList}\small\item\em A function to generate SW Interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface file for NVIC driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_n_v_i_c_8h_ae971a81d2595b279be10e36ceb9ba48d}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_u8IsInterruptActive@{NVIC\_u8IsInterruptActive}}
+\index{NVIC\_u8IsInterruptActive@{NVIC\_u8IsInterruptActive}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_u8IsInterruptActive()}
+{\footnotesize\ttfamily uint8 NVIC\+\_\+u8\+Is\+Interrupt\+Active (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num }\end{DoxyParamCaption})}
+
+
+
+A function to check weather the pripheral interrupt active or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8 Interrupt Active Flag 
+\end{DoxyReturn}
+\mbox{\label{_n_v_i_c_8h_a52c8b75de86d67f4076baa31a34ec86e}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidDisableInterrupt@{NVIC\_voidDisableInterrupt}}
+\index{NVIC\_voidDisableInterrupt@{NVIC\_voidDisableInterrupt}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidDisableInterrupt()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Disable\+Interrupt (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num }\end{DoxyParamCaption})}
+
+
+
+Disable peripheral Interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_n_v_i_c_8h_a637217c07447d5a74170b6bec4519830}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidDisableInterruptPinding@{NVIC\_voidDisableInterruptPinding}}
+\index{NVIC\_voidDisableInterruptPinding@{NVIC\_voidDisableInterruptPinding}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidDisableInterruptPinding()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Disable\+Interrupt\+Pinding (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num }\end{DoxyParamCaption})}
+
+
+
+Disable Interrupt Pending. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_n_v_i_c_8h_a1cef6ee788c81cb5807024ebed872dc8}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidEnableInterrupt@{NVIC\_voidEnableInterrupt}}
+\index{NVIC\_voidEnableInterrupt@{NVIC\_voidEnableInterrupt}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidEnableInterrupt()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Enable\+Interrupt (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num }\end{DoxyParamCaption})}
+
+
+
+Enable peripheral Interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_n_v_i_c_8h_ad5612a60a9abaa3cf7cbd75d92a2916e}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidEnableInterruptPending@{NVIC\_voidEnableInterruptPending}}
+\index{NVIC\_voidEnableInterruptPending@{NVIC\_voidEnableInterruptPending}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidEnableInterruptPending()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Enable\+Interrupt\+Pending (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num }\end{DoxyParamCaption})}
+
+
+
+Enable Interrupt Pending. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_n_v_i_c_8h_ad6a882508327d1c29b9650939dc75232}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidGenerateSoftwareInterrupt@{NVIC\_voidGenerateSoftwareInterrupt}}
+\index{NVIC\_voidGenerateSoftwareInterrupt@{NVIC\_voidGenerateSoftwareInterrupt}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidGenerateSoftwareInterrupt()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Generate\+Software\+Interrupt (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num }\end{DoxyParamCaption})}
+
+
+
+A function to generate SW Interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_n_v_i_c_8h_ac02ee983aae07e7adea318a2c232525f}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidInitInterruptGroup@{NVIC\_voidInitInterruptGroup}}
+\index{NVIC\_voidInitInterruptGroup@{NVIC\_voidInitInterruptGroup}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidInitInterruptGroup()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Init\+Interrupt\+Group (\begin{DoxyParamCaption}\item[{NVIC\+\_\+\+Group\+Mode\+\_\+t}]{copy\+\_\+\+Grop\+Mode }\end{DoxyParamCaption})}
+
+
+
+Initialize Interrupt Group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Grop\+Mode} & Group mode\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+\+Grop\+Mode} & Group mode \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_n_v_i_c_8h_a68b900c04e2f0ff0e1a6c66df9ad4082}} 
+\index{NVIC.h@{NVIC.h}!NVIC\_voidSetInterruptPriority@{NVIC\_voidSetInterruptPriority}}
+\index{NVIC\_voidSetInterruptPriority@{NVIC\_voidSetInterruptPriority}!NVIC.h@{NVIC.h}}
+\doxysubsubsection{NVIC\_voidSetInterruptPriority()}
+{\footnotesize\ttfamily void NVIC\+\_\+void\+Set\+Interrupt\+Priority (\begin{DoxyParamCaption}\item[{uint8}]{copy\+\_\+u8\+Int\+Num,  }\item[{NVIC\+\_\+\+Group\+Mode\+\_\+t}]{copy\+\_\+\+Grop\+Mode,  }\item[{uint8}]{copy\+\_\+u8\+Int\+Group,  }\item[{uint8}]{copy\+\_\+u8\+Int\+Prio }\end{DoxyParamCaption})}
+
+
+
+A function to adjust Interrupt Priority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+{\em copy\+\_\+\+Grop\+Mode} & Group Mode \\
+\hline
+{\em copy\+\_\+u8\+Int\+Group} & Interrupt Group \\
+\hline
+{\em copy\+\_\+u8\+Int\+Prio} & Interrupt Priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$ void
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy\+\_\+u8\+Int\+Num} & Interrupt name/\+ID \\
+\hline
+{\em copy\+\_\+\+Grop\+Mode} & Group Mode \\
+\hline
+{\em copy\+\_\+u8\+Int\+Group} & Interrupt Group \\
+\hline
+{\em copy\+\_\+u8\+Int\+Prio} & Interrupt Priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$ void 
+\end{DoxyReturn}

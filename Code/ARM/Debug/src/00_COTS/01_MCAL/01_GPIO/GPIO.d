@@ -1,0 +1,16 @@
+src/00_COTS/01_MCAL/01_GPIO/GPIO.o: ../src/00_COTS/01_MCAL/01_GPIO/GPIO.c \
+ ../src/00_COTS/01_MCAL/01_GPIO/../../00_LIB/STD_Types.h \
+ ../src/00_COTS/01_MCAL/01_GPIO/../../00_LIB/BIT_Math.h \
+ ../src/00_COTS/01_MCAL/01_GPIO/../01_GPIO/GPIO.h \
+ ../src/00_COTS/01_MCAL/01_GPIO/../01_GPIO/GPIO_cfg.h \
+ ../src/00_COTS/01_MCAL/01_GPIO/../01_GPIO/GPIO_priv.h
+
+../src/00_COTS/01_MCAL/01_GPIO/../../00_LIB/STD_Types.h:
+
+../src/00_COTS/01_MCAL/01_GPIO/../../00_LIB/BIT_Math.h:
+
+../src/00_COTS/01_MCAL/01_GPIO/../01_GPIO/GPIO.h:
+
+../src/00_COTS/01_MCAL/01_GPIO/../01_GPIO/GPIO_cfg.h:
+
+../src/00_COTS/01_MCAL/01_GPIO/../01_GPIO/GPIO_priv.h:

@@ -1,0 +1,67 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/04\+\_\+\+SERVICE/\+Fuel/\+Fuel.c File Reference}
+\label{_fuel_8c}\index{ARM/src/00\_COTS/04\_SERVICE/Fuel/Fuel.c@{ARM/src/00\_COTS/04\_SERVICE/Fuel/Fuel.c}}
+
+
+Program file for Fuel service for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../02\+\_\+\+HAL/\+DATA \+\_\+\+FRAME/\+DATA\+\_\+\+FRAME.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../02\+\_\+\+HAL/\+ADC\+\_\+conversion/\+ADC\+\_\+conv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Fuel.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8 \textbf{ FUEL\+\_\+u8\+Get\+Data} (void)
+\begin{DoxyCompactList}\small\item\em function to get and calculate Fuel Reading \end{DoxyCompactList}\item 
+void \textbf{ FUEL\+\_\+void\+Send\+Data} (uint8 u8\+Fuel\+CPY)
+\begin{DoxyCompactList}\small\item\em Send Fuel Reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for Fuel service for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_fuel_8c_a2d1600d226dbe61170bc1d24ea41b412}} 
+\index{Fuel.c@{Fuel.c}!FUEL\_u8GetData@{FUEL\_u8GetData}}
+\index{FUEL\_u8GetData@{FUEL\_u8GetData}!Fuel.c@{Fuel.c}}
+\doxysubsubsection{FUEL\_u8GetData()}
+{\footnotesize\ttfamily uint8 FUEL\+\_\+u8\+Get\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function to get and calculate Fuel Reading 
+
+\begin{DoxyReturn}{Returns}
+uint8 Fuel Reading 
+\end{DoxyReturn}
+\mbox{\label{_fuel_8c_a1024854199965693efd7da9d4d58ae32}} 
+\index{Fuel.c@{Fuel.c}!FUEL\_voidSendData@{FUEL\_voidSendData}}
+\index{FUEL\_voidSendData@{FUEL\_voidSendData}!Fuel.c@{Fuel.c}}
+\doxysubsubsection{FUEL\_voidSendData()}
+{\footnotesize\ttfamily void FUEL\+\_\+void\+Send\+Data (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Fuel\+CPY }\end{DoxyParamCaption})}
+
+
+
+Send Fuel Reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+BMSCPY} & Fuel Reading \\
+\hline
+\end{DoxyParams}

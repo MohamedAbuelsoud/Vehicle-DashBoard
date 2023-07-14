@@ -1,0 +1,192 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/00\+\_\+\+RCC/\+RCC.c File Reference}
+\label{_r_c_c_8c}\index{ARM/src/00\_COTS/01\_MCAL/00\_RCC/RCC.c@{ARM/src/00\_COTS/01\_MCAL/00\_RCC/RCC.c}}
+
+
+Program file for RCC driver for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../00\+\_\+\+RCC/\+RCC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../00\+\_\+\+RCC/\+RCC\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../00\+\_\+\+RCC/\+RCC\+\_\+priv.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ RCC\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em RCC Initialization Function. \end{DoxyCompactList}\item 
+uint8 \textbf{ RCC\+\_\+u8\+Check\+Clk\+Source} (void)
+\begin{DoxyCompactList}\small\item\em A function to check the current clock source. \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+void\+Enable\+Periphral\+Clock} (uint32 u32\+Prephiral\+Name\+Cpy)
+\begin{DoxyCompactList}\small\item\em A function to enable peripheral clock. \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+void\+Disable\+Periphral\+Clock} (uint8 u32\+Prephiral\+Name\+Cpy)
+\begin{DoxyCompactList}\small\item\em A function to disable peripheral clock. \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+\+HSIEnable} (void)
+\begin{DoxyCompactList}\small\item\em Enable Internal clock. \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+\+HSIDisable} (void)
+\begin{DoxyCompactList}\small\item\em disable Internal clock \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+\+HSEEnable} (uint8 u8\+Css\+Status, uint8 u8\+Hsebyo\+Status)
+\begin{DoxyCompactList}\small\item\em Enable External clock. \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+\+HSEDisable} (void)
+\begin{DoxyCompactList}\small\item\em Disable external clock. \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+\+PLLEnable} (void)
+\begin{DoxyCompactList}\small\item\em enable PLL clock \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+\+PLLDisable} (void)
+\begin{DoxyCompactList}\small\item\em disable PLL clock \end{DoxyCompactList}\item 
+void \textbf{ RCC\+\_\+void\+Set\+System\+Clock} (uint8 u8\+Change\+System\+Clock)
+\begin{DoxyCompactList}\small\item\em choose system clock \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for RCC driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_r_c_c_8c_ab14e95abb7ae8ed5b467d5350f47ddd9}} 
+\index{RCC.c@{RCC.c}!RCC\_HSEDisable@{RCC\_HSEDisable}}
+\index{RCC\_HSEDisable@{RCC\_HSEDisable}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_HSEDisable()}
+{\footnotesize\ttfamily void RCC\+\_\+\+HSEDisable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Disable external clock. 
+
+\mbox{\label{_r_c_c_8c_a99164d871ebe4eaa5afe4c0946dc9488}} 
+\index{RCC.c@{RCC.c}!RCC\_HSEEnable@{RCC\_HSEEnable}}
+\index{RCC\_HSEEnable@{RCC\_HSEEnable}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_HSEEnable()}
+{\footnotesize\ttfamily void RCC\+\_\+\+HSEEnable (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Css\+Status,  }\item[{uint8}]{u8\+Hsebyo\+Status }\end{DoxyParamCaption})}
+
+
+
+Enable External clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Css\+Status} & CSS \\
+\hline
+{\em u8\+Hsebyo\+Status} & HSE bypass \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_r_c_c_8c_acc60cbf52a30d36b064d0ee0bd95a3e5}} 
+\index{RCC.c@{RCC.c}!RCC\_HSIDisable@{RCC\_HSIDisable}}
+\index{RCC\_HSIDisable@{RCC\_HSIDisable}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_HSIDisable()}
+{\footnotesize\ttfamily void RCC\+\_\+\+HSIDisable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+disable Internal clock 
+
+\mbox{\label{_r_c_c_8c_a15bfaa6d4a39159caaa17fa543928f1a}} 
+\index{RCC.c@{RCC.c}!RCC\_HSIEnable@{RCC\_HSIEnable}}
+\index{RCC\_HSIEnable@{RCC\_HSIEnable}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_HSIEnable()}
+{\footnotesize\ttfamily void RCC\+\_\+\+HSIEnable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enable Internal clock. 
+
+\mbox{\label{_r_c_c_8c_ad995ef461a7941dd6a0d6760519bff0a}} 
+\index{RCC.c@{RCC.c}!RCC\_PLLDisable@{RCC\_PLLDisable}}
+\index{RCC\_PLLDisable@{RCC\_PLLDisable}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_PLLDisable()}
+{\footnotesize\ttfamily void RCC\+\_\+\+PLLDisable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+disable PLL clock 
+
+\mbox{\label{_r_c_c_8c_a2164802b96990609118a0bd91fc70d06}} 
+\index{RCC.c@{RCC.c}!RCC\_PLLEnable@{RCC\_PLLEnable}}
+\index{RCC\_PLLEnable@{RCC\_PLLEnable}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_PLLEnable()}
+{\footnotesize\ttfamily void RCC\+\_\+\+PLLEnable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+enable PLL clock 
+
+\mbox{\label{_r_c_c_8c_a3956c73f21fc70d6d315249b7be5b2a0}} 
+\index{RCC.c@{RCC.c}!RCC\_u8CheckClkSource@{RCC\_u8CheckClkSource}}
+\index{RCC\_u8CheckClkSource@{RCC\_u8CheckClkSource}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_u8CheckClkSource()}
+{\footnotesize\ttfamily uint8 RCC\+\_\+u8\+Check\+Clk\+Source (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+A function to check the current clock source. 
+
+\begin{DoxyReturn}{Returns}
+uint8 clock source 
+\end{DoxyReturn}
+\mbox{\label{_r_c_c_8c_ae51ff50bc15aacc7798ba701fca321db}} 
+\index{RCC.c@{RCC.c}!RCC\_voidDisablePeriphralClock@{RCC\_voidDisablePeriphralClock}}
+\index{RCC\_voidDisablePeriphralClock@{RCC\_voidDisablePeriphralClock}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_voidDisablePeriphralClock()}
+{\footnotesize\ttfamily void RCC\+\_\+void\+Disable\+Periphral\+Clock (\begin{DoxyParamCaption}\item[{uint8}]{u32\+Prephiral\+Name\+Cpy }\end{DoxyParamCaption})}
+
+
+
+A function to disable peripheral clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u32\+Prephiral\+Name\+Cpy} & peripheral name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_r_c_c_8c_a97c065b126090bf65e934594259a4196}} 
+\index{RCC.c@{RCC.c}!RCC\_voidEnablePeriphralClock@{RCC\_voidEnablePeriphralClock}}
+\index{RCC\_voidEnablePeriphralClock@{RCC\_voidEnablePeriphralClock}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_voidEnablePeriphralClock()}
+{\footnotesize\ttfamily void RCC\+\_\+void\+Enable\+Periphral\+Clock (\begin{DoxyParamCaption}\item[{uint32}]{u32\+Prephiral\+Name\+Cpy }\end{DoxyParamCaption})}
+
+
+
+A function to enable peripheral clock. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u32\+Prephiral\+Name\+Cpy} & peripheral name/\+ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_r_c_c_8c_a0edc6e5cd2632909e41fb6901137f6db}} 
+\index{RCC.c@{RCC.c}!RCC\_voidInit@{RCC\_voidInit}}
+\index{RCC\_voidInit@{RCC\_voidInit}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_voidInit()}
+{\footnotesize\ttfamily void RCC\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+RCC Initialization Function. 
+
+\mbox{\label{_r_c_c_8c_a51ed9b4a660b10f6c05c6944ebd46310}} 
+\index{RCC.c@{RCC.c}!RCC\_voidSetSystemClock@{RCC\_voidSetSystemClock}}
+\index{RCC\_voidSetSystemClock@{RCC\_voidSetSystemClock}!RCC.c@{RCC.c}}
+\doxysubsubsection{RCC\_voidSetSystemClock()}
+{\footnotesize\ttfamily void RCC\+\_\+void\+Set\+System\+Clock (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Change\+System\+Clock }\end{DoxyParamCaption})}
+
+
+
+choose system clock 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Change\+System\+Clock} & system clock name/\+ID \\
+\hline
+\end{DoxyParams}

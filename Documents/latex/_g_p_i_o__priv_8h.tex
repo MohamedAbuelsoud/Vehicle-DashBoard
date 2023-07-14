@@ -1,0 +1,50 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/01\+\_\+\+GPIO/\+GPIO\+\_\+priv.h File Reference}
+\label{_g_p_i_o__priv_8h}\index{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO\_priv.h@{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO\_priv.h}}
+
+
+Configuration file for GPIO driver for stm32f401cc.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ GPIO\+\_\+\+Mem\+MaP}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_g_p_i_o__priv_8h_ae062677b726c8296a17a3e00be377e62}} 
+\#define {\bfseries GBIO\+\_\+\+A\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40020000
+\item 
+\mbox{\label{_g_p_i_o__priv_8h_ab6763be608257aebdc64fb2b3b01b269}} 
+\#define {\bfseries GBIO\+\_\+\+B\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40020400
+\item 
+\mbox{\label{_g_p_i_o__priv_8h_ac55beaa9e0b2cbd309ba060e00652f45}} 
+\#define {\bfseries GBIO\+\_\+\+C\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40020800
+\item 
+\mbox{\label{_g_p_i_o__priv_8h_ac485358099728ddae050db37924dd6b7}} 
+\#define {\bfseries GPIOA}~((volatile \textbf{ GPIO\+\_\+\+Mem\+MaP} $\ast$) GBIO\+\_\+\+A\+\_\+\+BASE\+\_\+\+ADDRESS)
+\item 
+\mbox{\label{_g_p_i_o__priv_8h_a68b66ac73be4c836db878a42e1fea3cd}} 
+\#define {\bfseries GPIOB}~((volatile \textbf{ GPIO\+\_\+\+Mem\+MaP} $\ast$) GBIO\+\_\+\+B\+\_\+\+BASE\+\_\+\+ADDRESS)
+\item 
+\mbox{\label{_g_p_i_o__priv_8h_a2dca03332d620196ba943bc2346eaa08}} 
+\#define {\bfseries GPIOC}~((volatile \textbf{ GPIO\+\_\+\+Mem\+MaP} $\ast$) GBIO\+\_\+\+C\+\_\+\+BASE\+\_\+\+ADDRESS)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configuration file for GPIO driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

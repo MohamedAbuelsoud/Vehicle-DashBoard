@@ -1,0 +1,61 @@
+\doxysection{EXTI.\+h}
+\label{_e_x_t_i_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/04\_EXTI/EXTI.h@{ARM/src/00\_COTS/01\_MCAL/04\_EXTI/EXTI.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ EXTI\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ EXTI\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ EXTI0\ \ \ \ \ 0}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ EXTI1\ \ \ \ \ 1}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ \ \ RISING\_EDGE\ \ \ \ \ 0}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ \ \ FALLING\_EDGE\ \ \ 1}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ \ \ \ ON\_CHANGE\ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ LINE\_0\ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ LINE\_1\ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ LINE\_2\ \ \ \ \ \ \ \ \ \ 2}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ LINE\_3\ \ \ \ \ \ \ \ \ \ 3}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#define\ LINE\_4\ \ \ \ \ \ \ \ \ \ 4}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ LINE\_5\ \ \ \ \ \ \ \ \ \ 5}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ LINE\_6\ \ \ \ \ \ \ \ \ \ 6}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ LINE\_7\ \ \ \ \ \ \ \ \ \ 7}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ LINE\_8\ \ \ \ \ \ \ \ \ \ 8}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ LINE\_9\ \ \ \ \ \ \ \ \ \ 9}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ LINE\_10\ \ \ \ \ \ \ \ \ 10}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ LINE\_11\ \ \ \ \ \ \ \ \ 11}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ LINE\_12\ \ \ \ \ \ \ \ \ 12}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ LINE\_13\ \ \ \ \ \ \ \ \ 13}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ LINE\_14\ \ \ \ \ \ \ \ \ 14}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ LINE\_15\ \ \ \ \ \ \ \ \ 15}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ GPIOA\_PORT\ \ \ \ \ \ \ \ \ \ \ \ \ 0b0000}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ GPIOB\_PORT\ \ \ \ \ \ \ \ \ \ \ \ \ 0b0001}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ GPIOC\_PORT\ \ \ \ \ \ \ \ \ \ \ \ \ 0b0010}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ GPIOD\_PORT\ \ \ \ \ \ \ \ \ \ \ \ \ 0b0011}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{void}\ EXTI\_voidInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00055\ \textcolor{comment}{/*\ Function\ To\ Change\ Mode\ And\ Line\ At\ RunTime\ */}}
+\DoxyCodeLine{00056\ \textcolor{comment}{//\ Signal\ Latch\ ==\ Init\ But\ Here\ I\ can\ Change\ The\ Line\ And\ Sense\ Mode}}
+\DoxyCodeLine{00064\ \textcolor{comment}{}\textcolor{keywordtype}{void}\ EXTI\_voidSetSignalLatch(uint8\ Copy\_Exti\_Line\ ,uint8\ Copy\_EXTI\_Sense\_Mode\ )\ \ ;}
+\DoxyCodeLine{00065\ \textcolor{comment}{/*\ Give\ The\ Function\ The\ Line\ To\ Enable\ It\ IntTERPUT\ \ */}}
+\DoxyCodeLine{00071\ \textcolor{keywordtype}{void}\ EXIT\_voidEnableEXIT(uint8\ Copy\_u8Line)\ ;}
+\DoxyCodeLine{00072\ \textcolor{comment}{/*\ Give\ The\ Function\ The\ Line\ To\ Disable\ It\ IntTERPUT\ \ */}}
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{void}\ EXTI\_voidDisableEXTI(uint8\ Copy\_u8Line);}
+\DoxyCodeLine{00079\ \textcolor{comment}{/*\ Function\ Make\ SoftWare\ INT\ at\ Any\ Line\ */}}
+\DoxyCodeLine{00080\ \textcolor{comment}{//\ If\ Interrput\ Enable\ (PIE)\ ON\ This\ Line\ And\ EXTI\_IMR\ Line\ Writing\ By\ '1'\ ,\ When\ it\ is\ Set\ To\ '0'\ Set\ Corresponding\ Pending}}
+\DoxyCodeLine{00081\ \textcolor{comment}{/*\ IMR\ =\ 1\ And\ PR\ =0\ FOR\ 0:15\ Now\ You\ Will\ Have\ Software\ Trigger\ \&\ And\ It\ Clear\ By\ Put\ 1\ At\ PR\ */}}
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{void}\ EXIT\_voidSoftwareInterrput(uint8\ Copy\_u8Line);}
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{void}\ EXTI0\_voidSetCallBack(\ \textcolor{keywordtype}{void}\ (*ptr)\ (\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00102\ \textcolor{keywordtype}{void}\ EXTI1\_voidSetCallBack(\ \textcolor{keywordtype}{void}\ (*ptr)\ (\textcolor{keywordtype}{void}));}
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{void}\ EXTI\_voidSetEXTIConfiguration(uint8\ Copy\_u8ExtiLine\ ,\ uint8\ Copy\_u8GpioPortNum\ );}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif\ \ }}
+
+\end{DoxyCode}

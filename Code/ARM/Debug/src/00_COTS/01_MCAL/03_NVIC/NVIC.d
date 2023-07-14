@@ -1,0 +1,16 @@
+src/00_COTS/01_MCAL/03_NVIC/NVIC.o: ../src/00_COTS/01_MCAL/03_NVIC/NVIC.c \
+ ../src/00_COTS/01_MCAL/03_NVIC/../../00_LIB/STD_Types.h \
+ ../src/00_COTS/01_MCAL/03_NVIC/../../00_LIB/BIT_Math.h \
+ ../src/00_COTS/01_MCAL/03_NVIC/../03_NVIC/NVIC.h \
+ ../src/00_COTS/01_MCAL/03_NVIC/../03_NVIC/NVIC_Cfg.h \
+ ../src/00_COTS/01_MCAL/03_NVIC/../03_NVIC/NVIC_Priv.h
+
+../src/00_COTS/01_MCAL/03_NVIC/../../00_LIB/STD_Types.h:
+
+../src/00_COTS/01_MCAL/03_NVIC/../../00_LIB/BIT_Math.h:
+
+../src/00_COTS/01_MCAL/03_NVIC/../03_NVIC/NVIC.h:
+
+../src/00_COTS/01_MCAL/03_NVIC/../03_NVIC/NVIC_Cfg.h:
+
+../src/00_COTS/01_MCAL/03_NVIC/../03_NVIC/NVIC_Priv.h:

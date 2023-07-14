@@ -1,0 +1,168 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/01\+\_\+\+GPIO/\+GPIO.c File Reference}
+\label{_g_p_i_o_8c}\index{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO.c@{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO.c}}
+
+
+Program file for GPIO driver for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../01\+\_\+\+GPIO/\+GPIO.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../01\+\_\+\+GPIO/\+GPIO\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../01\+\_\+\+GPIO/\+GPIO\+\_\+priv.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Pin\+Mode} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Mode\+Cpy)
+\begin{DoxyCompactList}\small\item\em A function to set pin mode. \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Output\+Type} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Output\+Type\+Cpy)
+\begin{DoxyCompactList}\small\item\em a funtion to set output type \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Outout\+Speed} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Output\+Speed\+Cpy)
+\begin{DoxyCompactList}\small\item\em A function to set output speed. \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Pull\+Status} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Status\+Cpy)
+\begin{DoxyCompactList}\small\item\em set pull status \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Alternative\+Function} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Alt\+Func\+Cpy)
+\begin{DoxyCompactList}\small\item\em set alternative function \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Write\+Pin} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Data\+Cpy)
+\begin{DoxyCompactList}\small\item\em write pin output \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Read\+Pin} (uint8 u8\+Pin\+Number\+Cpy, uint8 $\ast$u8\+Data\+Cpy)
+\begin{DoxyCompactList}\small\item\em a function to read pin \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for GPIO driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_g_p_i_o_8c_a23caf660220869939205a24fc2f080b8}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidReadPin@{GPIO\_voidReadPin}}
+\index{GPIO\_voidReadPin@{GPIO\_voidReadPin}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidReadPin()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Read\+Pin (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8 $\ast$}]{u8\+Data\+Cpy }\end{DoxyParamCaption})}
+
+
+
+a function to read pin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Data\+Cpy} & pin reading value \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8c_acdc87760eee885ce1c28f0fb6aa69fac}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidSetAlternativeFunction@{GPIO\_voidSetAlternativeFunction}}
+\index{GPIO\_voidSetAlternativeFunction@{GPIO\_voidSetAlternativeFunction}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidSetAlternativeFunction()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Alternative\+Function (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Alt\+Func\+Cpy }\end{DoxyParamCaption})}
+
+
+
+set alternative function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Alt\+Func\+Cpy} & alternative function \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8c_a56dbc0005e7af659c5f5207b413c8bd3}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidSetOutoutSpeed@{GPIO\_voidSetOutoutSpeed}}
+\index{GPIO\_voidSetOutoutSpeed@{GPIO\_voidSetOutoutSpeed}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidSetOutoutSpeed()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Outout\+Speed (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Output\+Speed\+Cpy }\end{DoxyParamCaption})}
+
+
+
+A function to set output speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Output\+Speed\+Cpy} & output speed \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8c_a524ccd0e4b678858823b0a1d69b32f5e}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidSetOutputType@{GPIO\_voidSetOutputType}}
+\index{GPIO\_voidSetOutputType@{GPIO\_voidSetOutputType}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidSetOutputType()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Output\+Type (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Output\+Type\+Cpy }\end{DoxyParamCaption})}
+
+
+
+a funtion to set output type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Output\+Type\+Cpy} & output type \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8c_ac2f2e705c71bee9b0c17182b40c2117a}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidSetPinMode@{GPIO\_voidSetPinMode}}
+\index{GPIO\_voidSetPinMode@{GPIO\_voidSetPinMode}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidSetPinMode()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Pin\+Mode (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Mode\+Cpy }\end{DoxyParamCaption})}
+
+
+
+A function to set pin mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Mode\+Cpy} & pin mode \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8c_ae449d6dd2865252a26c73790784e34c9}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidSetPullStatus@{GPIO\_voidSetPullStatus}}
+\index{GPIO\_voidSetPullStatus@{GPIO\_voidSetPullStatus}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidSetPullStatus()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Pull\+Status (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Status\+Cpy }\end{DoxyParamCaption})}
+
+
+
+set pull status 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Status\+Cpy} & pin status \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8c_a992d61e4563966736612b10c4697de1c}} 
+\index{GPIO.c@{GPIO.c}!GPIO\_voidWritePin@{GPIO\_voidWritePin}}
+\index{GPIO\_voidWritePin@{GPIO\_voidWritePin}!GPIO.c@{GPIO.c}}
+\doxysubsubsection{GPIO\_voidWritePin()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Write\+Pin (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Data\+Cpy }\end{DoxyParamCaption})}
+
+
+
+write pin output 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Data\+Cpy} & pin output \\
+\hline
+\end{DoxyParams}

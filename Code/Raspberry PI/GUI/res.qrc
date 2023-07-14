@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>bat.png</file>
+        <file>bat2.png</file>
+        <file>belt.png</file>
+        <file>bg.png</file>
+        <file>green.png</file>
+        <file>Red.png</file>
+        <file>fuel.png</file>
+        <file>fuelscale.png</file>
+        <file>fuelscale1.png</file>
+        <file>heat.png</file>
+        <file>meter.png</file>
+        <file>meter2.png</file>
+        <file>pointer.png</file>
+        <file>pointer2.png</file>
+        <file>skidding.png</file>
+        <file>speed.png</file>
+        <file>temp1.png</file>
+    </qresource>
+</RCC>

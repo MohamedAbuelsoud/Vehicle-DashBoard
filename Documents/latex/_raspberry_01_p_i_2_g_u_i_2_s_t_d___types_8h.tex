@@ -1,0 +1,106 @@
+\doxysection{Raspberry PI/\+GUI/\+STD\+\_\+\+Types.h File Reference}
+\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h}\index{Raspberry PI/GUI/STD\_Types.h@{Raspberry PI/GUI/STD\_Types.h}}
+
+
+typedef for datatpes  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a530f11a96e508d171d28564c8dc20942}} 
+\#define {\bfseries NULL\+\_\+\+PTR}~(void $\ast$) 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_adde6aaee8457bee49c2a92621fe22b79}} 
+typedef unsigned char {\bfseries uint8}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a2e00abb078d312d1d8c4fbcd6be343d8}} 
+typedef unsigned short int {\bfseries uint16}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a9560e25c315bae45d1ed4e2ce49ce55a}} 
+typedef unsigned long int {\bfseries uint32}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a1a6408291ee3cfd0760a61ac64084154}} 
+typedef signed char {\bfseries sint8}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a93192af54e4138a69b0416973055176b}} 
+typedef signed short int {\bfseries sint16}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a0adef6737f09404b3e0ca610c8870afb}} 
+typedef signed long int {\bfseries sint32}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_aacdc525d6f7bddb3ae95d5c311bd06a1}} 
+typedef float {\bfseries float32}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a232fad1b0d6dcc7c16aabde98b2e2a80}} 
+typedef double {\bfseries float64}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a096f676f3e33065d5e778bbfcb9683da}} 
+typedef long double {\bfseries float128}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_af5d0313d23964b7ba53802e2bb5e5efa}} 
+typedef void($\ast$ {\bfseries pf}) (void)
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a05dececa1d9b87ba9ef6a4b11a789ce8}} 
+typedef void($\ast$ {\bfseries pf\+U16}) (uint16 $\ast$)
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a48946ca942dabbeeea972c09af3d80e9}} 
+typedef void($\ast$ {\bfseries pf2x\+U16}) (uint8 $\ast$, uint8 $\ast$)
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_af67fb11acbcf9a3fb18aec09ea4f3d84}} 
+typedef void($\ast$ {\bfseries pf2x\+F32}) (float32 $\ast$, float32 $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a8440f8c6e7495cabf0d2d3571b8226e3}} 
+enum {\bfseries tenu\+Error\+Status} \{ \newline
+{\bfseries EOK}
+, {\bfseries ENOK}
+, {\bfseries PARAM\+\_\+\+OUT\+\_\+\+RANGE}
+, {\bfseries PARAM\+\_\+\+NULL\+\_\+\+PTR}
+, \newline
+{\bfseries EOK}
+, {\bfseries ENOK}
+, {\bfseries PARAM\+\_\+\+OUT\+\_\+\+RANGE}
+, {\bfseries PARAM\+\_\+\+NULL\+\_\+\+PTR}
+ \}
+\item 
+\mbox{\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_a0c7fe4b6624bdbfdae9ab5c0bb23a35a}} 
+enum {\bfseries teni2\+CError\+Status} \{ \newline
+{\bfseries PROCESS\+\_\+\+OK}
+, {\bfseries PROCESS\+\_\+\+NOT\+\_\+\+OK}
+, {\bfseries ARBITRATION\+\_\+\+LOST}
+, {\bfseries START\+\_\+\+ERROR}
+, \newline
+{\bfseries DID\+\_\+\+NOT\+\_\+\+ACK}
+, {\bfseries TIME\+\_\+\+OUT}
+, {\bfseries PROCESS\+\_\+\+OK}
+, {\bfseries PROCESS\+\_\+\+NOT\+\_\+\+OK}
+, \newline
+{\bfseries ARBITRATION\+\_\+\+LOST}
+, {\bfseries START\+\_\+\+ERROR}
+, {\bfseries DID\+\_\+\+NOT\+\_\+\+ACK}
+, {\bfseries TIME\+\_\+\+OUT}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+typedef for datatpes 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

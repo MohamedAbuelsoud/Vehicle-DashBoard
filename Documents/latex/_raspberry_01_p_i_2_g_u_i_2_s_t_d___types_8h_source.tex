@@ -1,0 +1,53 @@
+\doxysection{STD\+\_\+\+Types.\+h}
+\label{_raspberry_01_p_i_2_g_u_i_2_s_t_d___types_8h_source}\index{Raspberry PI/GUI/STD\_Types.h@{Raspberry PI/GUI/STD\_Types.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ \ STD\_TYPES\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ \ STD\_TYPES\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ \ \ \ \ \ uint8\ \ ;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ uint16\ ;}
+\DoxyCodeLine{00017\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \ \textcolor{keywordtype}{int}\ uint32\ ;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ \ \ \ \ \ \ \ sint8\ \ ;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{short}\ \textcolor{keywordtype}{int}\ \ \ sint16\ ;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{long}\ \ \textcolor{keywordtype}{int}\ \ \ sint32\ ;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{float}\ \ \ \ \ \ \ \ \ \ \ \ \ \ float32\ ;}
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{double}\ \ \ \ \ \ \ \ \ \ \ \ \ float64\ ;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{typedef}\ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \ \ \ \ \ \ \ float128\ ;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{typedef}\ void(*pf)(void);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{typedef}\ void\ (*pfU16)\ (uint16*);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ void\ (*pf2xU16)\ (uint8*,uint8*);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{typedef}\ void\ (*pf2xF32)(float32*,\ float32*);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ }
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ EOK\ \ ,}
+\DoxyCodeLine{00037\ \ \ \ \ ENOK\ \ ,}
+\DoxyCodeLine{00038\ \ \ \ \ PARAM\_OUT\_RANGE,}
+\DoxyCodeLine{00039\ \ \ \ \ PARAM\_NULL\_PTR\ }
+\DoxyCodeLine{00040\ \}tenuErrorStatus;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ PROCESS\_OK,}
+\DoxyCodeLine{00045\ \ \ \ \ PROCESS\_NOT\_OK,}
+\DoxyCodeLine{00046\ \ \ \ \ ARBITRATION\_LOST,}
+\DoxyCodeLine{00047\ \ \ \ \ START\_ERROR,}
+\DoxyCodeLine{00048\ \ \ \ \ DID\_NOT\_ACK,}
+\DoxyCodeLine{00049\ \ \ \ \ TIME\_OUT}
+\DoxyCodeLine{00050\ \}teni2CErrorStatus;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ NULL\_PTR\ (void\ *)\ 0}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+
+\end{DoxyCode}

@@ -1,0 +1,161 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/06\+\_\+\+UART/\+USART.c File Reference}
+\label{_u_s_a_r_t_8c}\index{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART.c@{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART.c}}
+
+
+Program file for USART driver for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}USART.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}USART\+\_\+cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}USART\+\_\+priv.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ USART\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em USART Initialization. \end{DoxyCompactList}\item 
+void \textbf{ USART\+\_\+enu\+Get\+Data\+Byte} (uint8 u8\+Index\+CPY, uint8 $\ast$pu16\+Data\+Cpy)
+\begin{DoxyCompactList}\small\item\em Receive byte from USART. \end{DoxyCompactList}\item 
+void \textbf{ USART\+\_\+void\+Send\+Data\+Byte} (uint8 u8\+Index\+CPY, uint8 u16\+Data\+Cpy)
+\begin{DoxyCompactList}\small\item\em Send byte through USART. \end{DoxyCompactList}\item 
+void \textbf{ USART\+\_\+enu\+Get\+Data\+String} (uint8 u8\+Index\+CPY, uint16 $\ast$pu16\+Data\+Cpy, uint8 u8\+Size)
+\begin{DoxyCompactList}\small\item\em Receive string from USART. \end{DoxyCompactList}\item 
+void \textbf{ USART\+\_\+void\+Send\+Data\+String} (uint8 u8\+Index\+CPY, uint8 $\ast$u16\+Data\+Cpy, uint8 u8\+Size)
+\begin{DoxyCompactList}\small\item\em send string through USART \end{DoxyCompactList}\item 
+void \textbf{ USART\+\_\+void\+Enable} (uint8 u8\+Index\+CPY)
+\begin{DoxyCompactList}\small\item\em Enable USART Peripheral. \end{DoxyCompactList}\item 
+void \textbf{ USART\+\_\+void\+Disable} (uint8 u8\+Index\+CPY)
+\begin{DoxyCompactList}\small\item\em Disable USART Peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for USART driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_u_s_a_r_t_8c_a9cdf855559b4c7a82ce7d9ff3a5b7b91}} 
+\index{USART.c@{USART.c}!USART\_enuGetDataByte@{USART\_enuGetDataByte}}
+\index{USART\_enuGetDataByte@{USART\_enuGetDataByte}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_enuGetDataByte()}
+{\footnotesize\ttfamily void USART\+\_\+enu\+Get\+Data\+Byte (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Index\+CPY,  }\item[{uint8 $\ast$}]{pu16\+Data\+Cpy }\end{DoxyParamCaption})}
+
+
+
+Receive byte from USART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index\+CPY} & USART ID \\
+\hline
+{\em pu16\+Data\+Cpy} & Received DATA \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_u_s_a_r_t_8c_a5ce93280895a844793cb835904675401}} 
+\index{USART.c@{USART.c}!USART\_enuGetDataString@{USART\_enuGetDataString}}
+\index{USART\_enuGetDataString@{USART\_enuGetDataString}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_enuGetDataString()}
+{\footnotesize\ttfamily void USART\+\_\+enu\+Get\+Data\+String (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Index\+CPY,  }\item[{uint16 $\ast$}]{pu16\+Data\+Cpy,  }\item[{uint8}]{u8\+Size }\end{DoxyParamCaption})}
+
+
+
+Receive string from USART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index\+CPY} & USART ID \\
+\hline
+{\em pu16\+Data\+Cpy} & Received DATA \\
+\hline
+{\em u8\+Size} & string size \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_u_s_a_r_t_8c_a6089f851c3ca69bb28fb14b3f2ed1ee2}} 
+\index{USART.c@{USART.c}!USART\_voidDisable@{USART\_voidDisable}}
+\index{USART\_voidDisable@{USART\_voidDisable}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_voidDisable()}
+{\footnotesize\ttfamily void USART\+\_\+void\+Disable (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Index\+CPY }\end{DoxyParamCaption})}
+
+
+
+Disable USART Peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index\+CPY} & USART ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_u_s_a_r_t_8c_ae8f56fb559d6f9d9040ebc77b66a3d4d}} 
+\index{USART.c@{USART.c}!USART\_voidEnable@{USART\_voidEnable}}
+\index{USART\_voidEnable@{USART\_voidEnable}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_voidEnable()}
+{\footnotesize\ttfamily void USART\+\_\+void\+Enable (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Index\+CPY }\end{DoxyParamCaption})}
+
+
+
+Enable USART Peripheral. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index\+CPY} & USART ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_u_s_a_r_t_8c_a7c5e780af5cf56b1700c89e1526c6522}} 
+\index{USART.c@{USART.c}!USART\_voidInit@{USART\_voidInit}}
+\index{USART\_voidInit@{USART\_voidInit}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_voidInit()}
+{\footnotesize\ttfamily void USART\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+USART Initialization. 
+
+\mbox{\label{_u_s_a_r_t_8c_a599d74d2a389ea9b5bd561aab8b80d5e}} 
+\index{USART.c@{USART.c}!USART\_voidSendDataByte@{USART\_voidSendDataByte}}
+\index{USART\_voidSendDataByte@{USART\_voidSendDataByte}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_voidSendDataByte()}
+{\footnotesize\ttfamily void USART\+\_\+void\+Send\+Data\+Byte (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Index\+CPY,  }\item[{uint8}]{u16\+Data\+Cpy }\end{DoxyParamCaption})}
+
+
+
+Send byte through USART. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index\+CPY} & USART ID \\
+\hline
+{\em u16\+Data\+Cpy} & DATA to be sent \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_u_s_a_r_t_8c_aa977711279548162c0349f4c8567dfc1}} 
+\index{USART.c@{USART.c}!USART\_voidSendDataString@{USART\_voidSendDataString}}
+\index{USART\_voidSendDataString@{USART\_voidSendDataString}!USART.c@{USART.c}}
+\doxysubsubsection{USART\_voidSendDataString()}
+{\footnotesize\ttfamily void USART\+\_\+void\+Send\+Data\+String (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Index\+CPY,  }\item[{uint8 $\ast$}]{u16\+Data\+Cpy,  }\item[{uint8}]{u8\+Size }\end{DoxyParamCaption})}
+
+
+
+send string through USART 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Index\+CPY} & USART ID \\
+\hline
+{\em u16\+Data\+Cpy} & DATA to be sent \\
+\hline
+{\em u8\+Size} & string size \\
+\hline
+\end{DoxyParams}

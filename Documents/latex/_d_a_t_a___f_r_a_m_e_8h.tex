@@ -1,0 +1,74 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/02\+\_\+\+HAL/\+DATA \+\_\+\+FRAME/\+DATA\+\_\+\+FRAME.h File Reference}
+\label{_d_a_t_a___f_r_a_m_e_8h}\index{ARM/src/00\_COTS/02\_HAL/DATA \_FRAME/DATA\_FRAME.h@{ARM/src/00\_COTS/02\_HAL/DATA \_FRAME/DATA\_FRAME.h}}
+
+
+Interface file for Data Transmission Layer for stm32f401cc.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ DATA\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Initialize Service. \end{DoxyCompactList}\item 
+void \textbf{ DATA\+\_\+void\+Send\+Data} (uint8 u8\+Message\+Id, uint8 $\ast$au8\+Data, uint8 u8\+DLC)
+\begin{DoxyCompactList}\small\item\em Send Data Frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface file for Data Transmission Layer for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_d_a_t_a___f_r_a_m_e_8h_a421ec96675e4a4240f2fe7b7d86c9878}} 
+\index{DATA\_FRAME.h@{DATA\_FRAME.h}!DATA\_voidInit@{DATA\_voidInit}}
+\index{DATA\_voidInit@{DATA\_voidInit}!DATA\_FRAME.h@{DATA\_FRAME.h}}
+\doxysubsubsection{DATA\_voidInit()}
+{\footnotesize\ttfamily void DATA\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Service. 
+
+\mbox{\label{_d_a_t_a___f_r_a_m_e_8h_a7edc340b3a0314f1156c4d3d52998c30}} 
+\index{DATA\_FRAME.h@{DATA\_FRAME.h}!DATA\_voidSendData@{DATA\_voidSendData}}
+\index{DATA\_voidSendData@{DATA\_voidSendData}!DATA\_FRAME.h@{DATA\_FRAME.h}}
+\doxysubsubsection{DATA\_voidSendData()}
+{\footnotesize\ttfamily void DATA\+\_\+void\+Send\+Data (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Message\+Id,  }\item[{uint8 $\ast$}]{au8\+Data,  }\item[{uint8}]{u8\+DLC }\end{DoxyParamCaption})}
+
+
+
+Send Data Frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Message\+Id} & Message ID \\
+\hline
+{\em au8\+Data} & Data \\
+\hline
+{\em u8\+DLC} & Data Length Code\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Message\+Id} & Message ID \\
+\hline
+{\em au8\+Data} & Data \\
+\hline
+{\em u8\+DLC} & Data Length Code \\
+\hline
+\end{DoxyParams}

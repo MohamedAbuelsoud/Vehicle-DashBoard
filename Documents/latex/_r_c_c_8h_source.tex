@@ -1,0 +1,64 @@
+\doxysection{RCC.\+h}
+\label{_r_c_c_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/00\_RCC/RCC.h@{ARM/src/00\_COTS/01\_MCAL/00\_RCC/RCC.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ RCC\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ RCC\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ ENABLE\ \ \ \ 0}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ DISABLE\ \ \ 1}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ RCC\_GPIOA\ \ \ \ \ \ 0}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ RCC\_GPIOB\ \ \ \ \ \ 1}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ RCC\_GPIOC\ \ \ \ \ \ 2}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ RCC\_GPIOD\ \ \ \ \ \ 3}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ RCC\_GPIOE\ \ \ \ \ \ 4}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ RCC\_GPIOH\ \ \ \ \ \ 7}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ RCC\_CRC\ \ \ \ \ \ \ \ 12}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ RCC\_DMA1\ \ \ \ \ \ \ 21}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ RCC\_DMA2\ \ \ \ \ \ \ 22}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ RCC\_OTGFS\ \ \ \ \ (32+7)}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ RCC\_TIM2\ \ \ \ \ \ (64+0)}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ RCC\_TIM3\ \ \ \ \ \ (64+1)}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#define\ RCC\_TIM4\ \ \ \ \ \ (64+2)}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ RCC\_TIM5\ \ \ \ \ \ (64+3)}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ RCC\_WWDG\ \ \ \ \ \ (64+11)}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ RCC\_SPI2\ \ \ \ \ \ (64+14)}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ RCC\_SPI3\ \ \ \ \ \ (64+15)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ RCC\_USART2\ \ \ \ (64+17)}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ RCC\_I2C1\ \ \ \ \ \ (64+21)}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ RCC\_I2C2\ \ \ \ \ \ (64+22)}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ RCC\_I2C3\ \ \ \ \ \ (64+23)}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ RCC\_PWR\ \ \ \ \ \ \ (64+28)}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ RCC\_TIM1\ \ \ \ \ (96+0)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ RCC\_USART1\ \ \ (96+4)}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ RCC\_USART6\ \ \ (96+5)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ RCC\_ADC1\ \ \ \ \ (96+8)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ RCC\_SDIO\ \ \ \ \ (96+11)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ RCC\_SP11\ \ \ \ \ (96+12)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ RCC\_SP14\ \ \ \ \ (96+13)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ RCC\_SYSCFG\ \ \ (96+14)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ RCC\_TIM9\ \ \ \ \ (96+16)}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ RCC\_TIM10\ \ \ \ (96+17)}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ RCC\_TIM11\ \ \ \ (96+18)}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}\ RCC\_voidInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00066\ uint8\ RCC\_u8CheckClkSource(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ RCC\_voidEnablePeriphralClock(uint32\ u32PrephiralNameCpy);}
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{void}\ RCC\_voidDisablePeriphralClock(uint8\ u32PrephiralNameCpy);}
+\DoxyCodeLine{00083\ \textcolor{keywordtype}{void}\ RCC\_HSIEnable(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{void}\ RCC\_HSIDisable(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{void}\ RCC\_HSEEnable(uint8\ u8CssStatus,\ uint8\ u8HsebyoStatus);}
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{void}\ RCC\_HSEDisable(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00105\ \textcolor{keywordtype}{void}\ RCC\_PLLEnable(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{void}\ RCC\_PLLDisable(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{void}\ RCC\_voidSetSystemClock(uint8\ u8ChangeSystemClock);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

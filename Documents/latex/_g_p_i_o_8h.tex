@@ -1,0 +1,427 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/01\+\_\+\+GPIO/\+GPIO.h File Reference}
+\label{_g_p_i_o_8h}\index{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO.h@{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO.h}}
+
+
+Interface file for GPIO driver for stm32f401cc.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_g_p_i_o_8h_a81a0b997278aa4dbf5f35f7c02c742b8}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+00}~0
+\item 
+\mbox{\label{_g_p_i_o_8h_a9d7a714956136f1d9b6a94df4765f127}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+01}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_a62923976c66d536c16fbc4b1d85a48d5}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+02}~2
+\item 
+\mbox{\label{_g_p_i_o_8h_a3c491150c4f77081b084f7b92153df73}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+03}~3
+\item 
+\mbox{\label{_g_p_i_o_8h_ae94ef8d5a18def83c209d7454177becd}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+04}~4
+\item 
+\mbox{\label{_g_p_i_o_8h_ae362324ae0b028192e0512836786c579}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+05}~5
+\item 
+\mbox{\label{_g_p_i_o_8h_a8da3030684400e669522288fcddaec52}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+06}~6
+\item 
+\mbox{\label{_g_p_i_o_8h_aeb422063a0f97a88b1c7a598eb3365be}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+07}~7
+\item 
+\mbox{\label{_g_p_i_o_8h_a19022dce4726d7f389b6f8c13ae431fe}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+08}~8
+\item 
+\mbox{\label{_g_p_i_o_8h_aefb74aca87fbd6756cbb78538c5ee7d5}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+09}~9
+\item 
+\mbox{\label{_g_p_i_o_8h_a553d8082ba0a00db5227f867771674d5}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+10}~10
+\item 
+\mbox{\label{_g_p_i_o_8h_a1b1f150f543711458ae3323d082bce92}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+11}~11
+\item 
+\mbox{\label{_g_p_i_o_8h_aed1e6efce0aa41458a95df3918680539}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+12}~12
+\item 
+\mbox{\label{_g_p_i_o_8h_ade7f6f90b6cd25455d26c1ed1bbd065e}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+13}~13
+\item 
+\mbox{\label{_g_p_i_o_8h_ad9a25cccc4b445b7f3ebd31b18606556}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+14}~14
+\item 
+\mbox{\label{_g_p_i_o_8h_ac30eee845369898b4ecbbdd0b511e0a4}} 
+\#define {\bfseries GPIOA\+\_\+\+PIN\+\_\+\+NUM\+\_\+15}~15
+\item 
+\mbox{\label{_g_p_i_o_8h_aa5b9b8a89294f57ce1fbee440bc60401}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+00}~(16+0)
+\item 
+\mbox{\label{_g_p_i_o_8h_a9fb8a2180bd13a37edd3847f9f72e839}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+01}~(16+1)
+\item 
+\mbox{\label{_g_p_i_o_8h_ae071d72324243e33eb9291ec12a2400f}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+02}~(16+2)
+\item 
+\mbox{\label{_g_p_i_o_8h_a91fa3011a232f07aa79067e4f0350e14}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+03}~(16+3)
+\item 
+\mbox{\label{_g_p_i_o_8h_ac45d209e63c215ee063044493bfb2253}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+04}~(16+4)
+\item 
+\mbox{\label{_g_p_i_o_8h_aed3cec4e785a6b78085febf8fa6c1d84}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+05}~(16+5)
+\item 
+\mbox{\label{_g_p_i_o_8h_a1c0cd3693c1ade1b2c3f1b4fd1e8c203}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+06}~(16+6)
+\item 
+\mbox{\label{_g_p_i_o_8h_af5df9404a6c01e8888a2777a19fc8382}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+07}~(16+7)
+\item 
+\mbox{\label{_g_p_i_o_8h_ab7730bfcb37c7370b13eb6c29d985536}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+08}~(16+8)
+\item 
+\mbox{\label{_g_p_i_o_8h_a3579bfedd30720925aede05625bafe3b}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+09}~(16+9)
+\item 
+\mbox{\label{_g_p_i_o_8h_ae79ff08e05efafe5c767fd3e10bec513}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+10}~(16+10)
+\item 
+\mbox{\label{_g_p_i_o_8h_afe036db8575e0176d2f879a7f6c10a2a}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+11}~(16+11)
+\item 
+\mbox{\label{_g_p_i_o_8h_aa15d719597799bb3b136d6d3019eac5f}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+12}~(16+12)
+\item 
+\mbox{\label{_g_p_i_o_8h_afc236e83413237cb10aa83c82374dfc6}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+13}~(16+13)
+\item 
+\mbox{\label{_g_p_i_o_8h_ac9815389bf95f063e45bc34d13c1d408}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+14}~(16+14)
+\item 
+\mbox{\label{_g_p_i_o_8h_ace03b1ad4a151787f1544a1639e59181}} 
+\#define {\bfseries GPIOB\+\_\+\+PIN\+\_\+\+NUM\+\_\+15}~(16+15)
+\item 
+\mbox{\label{_g_p_i_o_8h_ae8b6c20cb761bf3327168847cc06fd42}} 
+\#define {\bfseries GPIOC\+\_\+\+PIN\+\_\+\+NUM\+\_\+13}~(32+13)
+\item 
+\mbox{\label{_g_p_i_o_8h_a45598609feae0d9240997e189a788913}} 
+\#define {\bfseries GPIOC\+\_\+\+PIN\+\_\+\+NUM\+\_\+14}~(32+14)
+\item 
+\mbox{\label{_g_p_i_o_8h_aee8f25eabaf725159b3d21fcf9ebaf82}} 
+\#define {\bfseries GPIOC\+\_\+\+PIN\+\_\+\+NUM\+\_\+15}~(32+15)
+\item 
+\mbox{\label{_g_p_i_o_8h_a1422f64c2ca32e199974734090992b81}} 
+\#define {\bfseries GPIO\+\_\+\+DIGITAL\+\_\+\+INPUT}~0
+\item 
+\mbox{\label{_g_p_i_o_8h_a7fbeaa2098911db119b2d25b4455f020}} 
+\#define {\bfseries GPIO\+\_\+\+DIGITAL\+\_\+\+OUTPUT}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_a42a4109de07885293926f75ec4537a2c}} 
+\#define {\bfseries GPIO\+\_\+\+ALTERNATE\+\_\+\+FUNC}~2
+\item 
+\mbox{\label{_g_p_i_o_8h_a2e0f16f4e9972b0e1e914d64f87cd6f6}} 
+\#define {\bfseries GPIO\+\_\+\+ANALOG}~3
+\item 
+\mbox{\label{_g_p_i_o_8h_aa9397947a8736ed826293ccf5c4d15db}} 
+\#define {\bfseries GPIO\+\_\+\+PUSHPULL\+\_\+\+TYPE}~0
+\item 
+\mbox{\label{_g_p_i_o_8h_a4cce19343eb46adf14070fc2c5b6542b}} 
+\#define {\bfseries GPIO\+\_\+\+OPEN\+\_\+\+DRAIN\+\_\+\+TYPE}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_a759062350b003bb25ce24f5b8939cfdf}} 
+\#define {\bfseries GPIO\+\_\+\+LOW\+\_\+\+SPEED}~0
+\item 
+\mbox{\label{_g_p_i_o_8h_a67481322495dabb28e331f8d417459be}} 
+\#define {\bfseries GPIO\+\_\+\+MEDIUM\+\_\+\+SPEED}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_a4315812f4da13ec1dbbef281086ea8be}} 
+\#define {\bfseries GPIO\+\_\+\+HIGH\+\_\+\+SPEED}~2
+\item 
+\mbox{\label{_g_p_i_o_8h_abcf259977bfd23ef66829fab6226c72c}} 
+\#define {\bfseries GPIO\+\_\+\+VERY\+\_\+\+HIGH\+\_\+\+SPEED}~3
+\item 
+\mbox{\label{_g_p_i_o_8h_a669e2950a97dbeb35dea8f58e43915f3}} 
+\#define {\bfseries GPIO\+\_\+\+FLOATING}~0
+\item 
+\mbox{\label{_g_p_i_o_8h_aaa7921da231fd2b96575fa522e2c1970}} 
+\#define {\bfseries GPIO\+\_\+\+PULL\+\_\+\+UP}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_adec1802e074f3021d464da09cd66c7cf}} 
+\#define {\bfseries GPIO\+\_\+\+PULL\+\_\+\+DOWN}~2
+\item 
+\mbox{\label{_g_p_i_o_8h_a4a21d544980ba63734846e1ba281e416}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF00}~0
+\item 
+\mbox{\label{_g_p_i_o_8h_a992af180df2e06540861d1e12f549850}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF01}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_a9b94b9afb02191d5b68576da26723d9d}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF02}~2
+\item 
+\mbox{\label{_g_p_i_o_8h_a85432e1b1b356372fb066e21b068ebb0}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF03}~3
+\item 
+\mbox{\label{_g_p_i_o_8h_afccf3a1cf3f82feca87b08003eb45134}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF04}~4
+\item 
+\mbox{\label{_g_p_i_o_8h_a1526eadec71ea098ac4ee976ea330d2f}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF05}~5
+\item 
+\mbox{\label{_g_p_i_o_8h_a5fcdf7d7d41559bf52552f66d80459a7}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF06}~6
+\item 
+\mbox{\label{_g_p_i_o_8h_a29ee2d2f11c7e6898643ff0e1a33bb81}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF07}~7
+\item 
+\mbox{\label{_g_p_i_o_8h_ab06a6dcdc319ab4dba6b9ee7ffade33d}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF08}~8
+\item 
+\mbox{\label{_g_p_i_o_8h_a60c1a32f5dc0a62f0f4af647f798a631}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF09}~9
+\item 
+\mbox{\label{_g_p_i_o_8h_a343a367d3b9d4243e49dc5be06e04de7}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF10}~10
+\item 
+\mbox{\label{_g_p_i_o_8h_a1445a9e468ba2cdfdadbf0b429ec4990}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF11}~11
+\item 
+\mbox{\label{_g_p_i_o_8h_aa6b179b3326540e3f80156527f265960}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF12}~12
+\item 
+\mbox{\label{_g_p_i_o_8h_af00ae9504d63dd49b1b3560c898b4692}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF13}~13
+\item 
+\mbox{\label{_g_p_i_o_8h_a3061880aa2408969a753b4ad46e0c009}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF14}~14
+\item 
+\mbox{\label{_g_p_i_o_8h_ada4167e149defc52cb0ed3a5e29daeab}} 
+\#define {\bfseries GPIO\+\_\+\+ALT\+\_\+\+FUNC\+\_\+\+AF15}~15
+\item 
+\mbox{\label{_g_p_i_o_8h_a5bb885982ff66a2e0a0a45a8ee9c35e2}} 
+\#define {\bfseries HIGH}~1
+\item 
+\mbox{\label{_g_p_i_o_8h_ab811d8c6ff3a505312d3276590444289}} 
+\#define {\bfseries LOW}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Pin\+Mode} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Mode\+Cpy)
+\begin{DoxyCompactList}\small\item\em A function to set pin mode. \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Output\+Type} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Output\+Type\+Cpy)
+\begin{DoxyCompactList}\small\item\em a funtion to set output type \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Outout\+Speed} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Output\+Speed\+Cpy)
+\begin{DoxyCompactList}\small\item\em A function to set output speed. \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Pull\+Status} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Pin\+Status\+Cpy)
+\begin{DoxyCompactList}\small\item\em set pull status \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Set\+Alternative\+Function} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Alt\+Func\+Cpy)
+\begin{DoxyCompactList}\small\item\em set alternative function \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Write\+Pin} (uint8 u8\+Pin\+Number\+Cpy, uint8 u8\+Data\+Cpy)
+\begin{DoxyCompactList}\small\item\em write pin output \end{DoxyCompactList}\item 
+void \textbf{ GPIO\+\_\+void\+Read\+Pin} (uint8 u8\+Pin\+Number\+Cpy, uint8 $\ast$u8\+Data\+Cpy)
+\begin{DoxyCompactList}\small\item\em a function to read pin \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface file for GPIO driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_g_p_i_o_8h_a23caf660220869939205a24fc2f080b8}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidReadPin@{GPIO\_voidReadPin}}
+\index{GPIO\_voidReadPin@{GPIO\_voidReadPin}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidReadPin()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Read\+Pin (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8 $\ast$}]{u8\+Data\+Cpy }\end{DoxyParamCaption})}
+
+
+
+a function to read pin 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Data\+Cpy} & pin reading value\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Data\+Cpy} & pin reading value \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8h_acdc87760eee885ce1c28f0fb6aa69fac}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidSetAlternativeFunction@{GPIO\_voidSetAlternativeFunction}}
+\index{GPIO\_voidSetAlternativeFunction@{GPIO\_voidSetAlternativeFunction}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidSetAlternativeFunction()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Alternative\+Function (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Alt\+Func\+Cpy }\end{DoxyParamCaption})}
+
+
+
+set alternative function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Alt\+Func\+Cpy} & alternative function\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Alt\+Func\+Cpy} & alternative function \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8h_a56dbc0005e7af659c5f5207b413c8bd3}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidSetOutoutSpeed@{GPIO\_voidSetOutoutSpeed}}
+\index{GPIO\_voidSetOutoutSpeed@{GPIO\_voidSetOutoutSpeed}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidSetOutoutSpeed()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Outout\+Speed (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Output\+Speed\+Cpy }\end{DoxyParamCaption})}
+
+
+
+A function to set output speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Output\+Speed\+Cpy} & output speed\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Output\+Speed\+Cpy} & output speed \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8h_a524ccd0e4b678858823b0a1d69b32f5e}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidSetOutputType@{GPIO\_voidSetOutputType}}
+\index{GPIO\_voidSetOutputType@{GPIO\_voidSetOutputType}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidSetOutputType()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Output\+Type (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Output\+Type\+Cpy }\end{DoxyParamCaption})}
+
+
+
+a funtion to set output type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Output\+Type\+Cpy} & output type\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Output\+Type\+Cpy} & output type \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8h_ac2f2e705c71bee9b0c17182b40c2117a}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidSetPinMode@{GPIO\_voidSetPinMode}}
+\index{GPIO\_voidSetPinMode@{GPIO\_voidSetPinMode}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidSetPinMode()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Pin\+Mode (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Mode\+Cpy }\end{DoxyParamCaption})}
+
+
+
+A function to set pin mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Mode\+Cpy} & pin mode\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Mode\+Cpy} & pin mode \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8h_ae449d6dd2865252a26c73790784e34c9}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidSetPullStatus@{GPIO\_voidSetPullStatus}}
+\index{GPIO\_voidSetPullStatus@{GPIO\_voidSetPullStatus}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidSetPullStatus()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Set\+Pull\+Status (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Pin\+Status\+Cpy }\end{DoxyParamCaption})}
+
+
+
+set pull status 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Status\+Cpy} & pin status\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Pin\+Status\+Cpy} & pin status \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_g_p_i_o_8h_a992d61e4563966736612b10c4697de1c}} 
+\index{GPIO.h@{GPIO.h}!GPIO\_voidWritePin@{GPIO\_voidWritePin}}
+\index{GPIO\_voidWritePin@{GPIO\_voidWritePin}!GPIO.h@{GPIO.h}}
+\doxysubsubsection{GPIO\_voidWritePin()}
+{\footnotesize\ttfamily void GPIO\+\_\+void\+Write\+Pin (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Pin\+Number\+Cpy,  }\item[{uint8}]{u8\+Data\+Cpy }\end{DoxyParamCaption})}
+
+
+
+write pin output 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Data\+Cpy} & pin output\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Pin\+Number\+Cpy} & pin number \\
+\hline
+{\em u8\+Data\+Cpy} & pin output \\
+\hline
+\end{DoxyParams}

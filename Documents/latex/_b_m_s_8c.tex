@@ -1,0 +1,80 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/04\+\_\+\+SERVICE/\+BMS/\+BMS.c File Reference}
+\label{_b_m_s_8c}\index{ARM/src/00\_COTS/04\_SERVICE/BMS/BMS.c@{ARM/src/00\_COTS/04\_SERVICE/BMS/BMS.c}}
+
+
+Program file for BMS service for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../02\+\_\+\+HAL/\+DATA \+\_\+\+FRAME/\+DATA\+\_\+\+FRAME.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../02\+\_\+\+HAL/\+ADC\+\_\+conversion/\+ADC\+\_\+conv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../02\+\_\+\+HAL/\+Time/\+Time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}BMS.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_b_m_s_8c_a03f1a6b4d75a447ea50b669045f6f35f}} 
+\#define {\bfseries MAX\+\_\+\+CHARGE}~1
+\item 
+\mbox{\label{_b_m_s_8c_a6e274075623f8ebac2b39be499615116}} 
+\#define {\bfseries OFFSIT}~0
+\item 
+\mbox{\label{_b_m_s_8c_a8c8f27b35dfa40ccf31c1ee31479a31c}} 
+\#define {\bfseries GAIN}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8 \textbf{ BMS\+\_\+u8\+Get\+Data} (void)
+\begin{DoxyCompactList}\small\item\em function to get and calculate Battery Reading \end{DoxyCompactList}\item 
+void \textbf{ BMS\+\_\+void\+Send\+Data} (uint8 u8\+BMSCPY)
+\begin{DoxyCompactList}\small\item\em Send Battery Reading. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for BMS service for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_b_m_s_8c_a282fc28cbc4881072605805fa3c52150}} 
+\index{BMS.c@{BMS.c}!BMS\_u8GetData@{BMS\_u8GetData}}
+\index{BMS\_u8GetData@{BMS\_u8GetData}!BMS.c@{BMS.c}}
+\doxysubsubsection{BMS\_u8GetData()}
+{\footnotesize\ttfamily uint8 BMS\+\_\+u8\+Get\+Data (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function to get and calculate Battery Reading 
+
+\begin{DoxyReturn}{Returns}
+uint8 Battery Reading 
+\end{DoxyReturn}
+\mbox{\label{_b_m_s_8c_a672afafcab323c247d7f646822592b4c}} 
+\index{BMS.c@{BMS.c}!BMS\_voidSendData@{BMS\_voidSendData}}
+\index{BMS\_voidSendData@{BMS\_voidSendData}!BMS.c@{BMS.c}}
+\doxysubsubsection{BMS\_voidSendData()}
+{\footnotesize\ttfamily void BMS\+\_\+void\+Send\+Data (\begin{DoxyParamCaption}\item[{uint8}]{u8\+BMSCPY }\end{DoxyParamCaption})}
+
+
+
+Send Battery Reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+BMSCPY} & Battery Reading \\
+\hline
+\end{DoxyParams}

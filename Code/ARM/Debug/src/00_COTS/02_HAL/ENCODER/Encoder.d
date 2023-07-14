@@ -1,0 +1,23 @@
+src/00_COTS/02_HAL/ENCODER/Encoder.o: \
+ ../src/00_COTS/02_HAL/ENCODER/Encoder.c \
+ ../src/00_COTS/02_HAL/ENCODER/../../00_LIB/STD_Types.h \
+ ../src/00_COTS/02_HAL/ENCODER/../../00_LIB/BIT_Math.h \
+ ../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/00_RCC/RCC.h \
+ ../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/01_GPIO/GPIO.h \
+ ../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/03_NVIC/NVIC.h \
+ ../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/04_EXTI/EXTI.h \
+ ../src/00_COTS/02_HAL/ENCODER/Encoder.h
+
+../src/00_COTS/02_HAL/ENCODER/../../00_LIB/STD_Types.h:
+
+../src/00_COTS/02_HAL/ENCODER/../../00_LIB/BIT_Math.h:
+
+../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/00_RCC/RCC.h:
+
+../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/01_GPIO/GPIO.h:
+
+../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/03_NVIC/NVIC.h:
+
+../src/00_COTS/02_HAL/ENCODER/../../01_MCAL/04_EXTI/EXTI.h:
+
+../src/00_COTS/02_HAL/ENCODER/Encoder.h:

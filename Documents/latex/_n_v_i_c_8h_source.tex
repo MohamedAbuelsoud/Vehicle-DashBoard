@@ -1,0 +1,48 @@
+\doxysection{NVIC.\+h}
+\label{_n_v_i_c_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC.h@{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ NVIC\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ NVIC\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ WWDG\ \ \ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ NVIC\_EXTI0\ \ \ \ \ 6}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//SCB.}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//-\/xx}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//x-\/-\/}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//x-\/x}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//xx-\/}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//xxx}}
+\DoxyCodeLine{00028\ \ \ \ \ NVIC\_GroupMode\_g16s0\ =\ 3,}
+\DoxyCodeLine{00029\ \ \ \ \ NVIC\_GroupMode\_g8s2,}
+\DoxyCodeLine{00030\ \ \ \ \ NVIC\_GroupMode\_g4s4,}
+\DoxyCodeLine{00031\ \ \ \ \ NVIC\_GroupMode\_g2s8,}
+\DoxyCodeLine{00032\ \ \ \ \ NVIC\_GroupMode\_g0s16}
+\DoxyCodeLine{00033\ \}NVIC\_GroupMode\_t;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ NVIC\_voidEnableInterrupt(uint8\ copy\_u8IntNum);}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ NVIC\_voidDisableInterrupt(uint8\ copy\_u8IntNum);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{//Trigger\ Interrupt.}}
+\DoxyCodeLine{00054\ \textcolor{comment}{}\textcolor{keywordtype}{void}\ NVIC\_voidEnableInterruptPending(uint8\ copy\_u8IntNum);}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}\ NVIC\_voidDisableInterruptPinding(uint8\ copy\_u8IntNum);}
+\DoxyCodeLine{00061\ \textcolor{comment}{//Get\ Stuts.}}
+\DoxyCodeLine{00068\ \textcolor{comment}{}uint8\ NVIC\_u8IsInterruptActive(uint8\ copy\_u8IntNum);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ NVIC\_voidSetInterruptPriority(uint8\ copy\_u8IntNum,}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ NVIC\_GroupMode\_t\ copy\_GropMode,}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\ copy\_u8IntGroup,}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint8\ copy\_u8IntPrio);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{void}\ NVIC\_voidInitInterruptGroup(NVIC\_GroupMode\_t\ copy\_GropMode);}
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{void}\ NVIC\_voidGenerateSoftwareInterrupt(uint8\ copy\_u8IntNum);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

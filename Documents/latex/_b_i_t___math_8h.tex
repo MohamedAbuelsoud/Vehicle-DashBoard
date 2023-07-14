@@ -1,0 +1,39 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/00\+\_\+\+LIB/\+BIT\+\_\+\+Math.h File Reference}
+\label{_b_i_t___math_8h}\index{ARM/src/00\_COTS/00\_LIB/BIT\_Math.h@{ARM/src/00\_COTS/00\_LIB/BIT\_Math.h}}
+
+
+Macros for bitwise operations.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_b_i_t___math_8h_a26474f43799fbade9cf300e21dd3a91a}} 
+\#define {\bfseries SET\+\_\+\+BIT}(REG,  BIT)~REG $\vert$= 1$<$$<$BIT
+\item 
+\mbox{\label{_b_i_t___math_8h_a96fae2c0e48fd3f85b2438aa61ba4550}} 
+\#define {\bfseries CLR\+\_\+\+BIT}(REG,  BIT)~REG \&= $\sim$(1$<$$<$BIT)
+\item 
+\mbox{\label{_b_i_t___math_8h_a0a66dfd8e59642b93ade9bbd4d327fa7}} 
+\#define {\bfseries TOG\+\_\+\+BIT}(REG,  BIT)~REG $^\wedge$= 1$<$$<$BIT
+\item 
+\mbox{\label{_b_i_t___math_8h_ac6ee02a427612497aa94621a3c7a6e27}} 
+\#define {\bfseries GET\+\_\+\+BIT}(REG,  BIT)~((REG $>$$>$ BIT) \& 1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Macros for bitwise operations. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

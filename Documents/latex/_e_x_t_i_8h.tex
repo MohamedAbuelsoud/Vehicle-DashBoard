@@ -1,0 +1,289 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/04\+\_\+\+EXTI/\+EXTI.h File Reference}
+\label{_e_x_t_i_8h}\index{ARM/src/00\_COTS/01\_MCAL/04\_EXTI/EXTI.h@{ARM/src/00\_COTS/01\_MCAL/04\_EXTI/EXTI.h}}
+
+
+Interface file for Exernal Interrupt driver for stm32f401cc.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_e_x_t_i_8h_a77d55cf55a67ff5d43794d24f7cb9922}} 
+\#define {\bfseries EXTI0}~0
+\item 
+\mbox{\label{_e_x_t_i_8h_abcd18cd089259e5c95d338adc4949821}} 
+\#define {\bfseries EXTI1}~1
+\item 
+\mbox{\label{_e_x_t_i_8h_af13ff90bb3a97b9d46ae59f02c515b67}} 
+\#define {\bfseries RISING\+\_\+\+EDGE}~0
+\item 
+\mbox{\label{_e_x_t_i_8h_a159ba045d627097f4f2d351bec51afe1}} 
+\#define {\bfseries FALLING\+\_\+\+EDGE}~1
+\item 
+\mbox{\label{_e_x_t_i_8h_a83548b85838332f25cbbb972f8b46f0b}} 
+\#define {\bfseries ON\+\_\+\+CHANGE}~2
+\item 
+\mbox{\label{_e_x_t_i_8h_a9f57ecced65e369d740f5445de2baad2}} 
+\#define {\bfseries LINE\+\_\+0}~0
+\item 
+\mbox{\label{_e_x_t_i_8h_a9196df10e0cb809244bf859290b5c78a}} 
+\#define {\bfseries LINE\+\_\+1}~1
+\item 
+\mbox{\label{_e_x_t_i_8h_a7e85c2277908d02ffdf5e57e781a0901}} 
+\#define {\bfseries LINE\+\_\+2}~2
+\item 
+\mbox{\label{_e_x_t_i_8h_aaf2ffd55ecbf422a8852d5909a1f9346}} 
+\#define {\bfseries LINE\+\_\+3}~3
+\item 
+\mbox{\label{_e_x_t_i_8h_a7c634e6f2a9e85c6e61cdd042ec0e3c6}} 
+\#define {\bfseries LINE\+\_\+4}~4
+\item 
+\mbox{\label{_e_x_t_i_8h_a396aaa1a04d5093b8fd18451e92bccf5}} 
+\#define {\bfseries LINE\+\_\+5}~5
+\item 
+\mbox{\label{_e_x_t_i_8h_a35428f72ac25e3028b267819d5960dcc}} 
+\#define {\bfseries LINE\+\_\+6}~6
+\item 
+\mbox{\label{_e_x_t_i_8h_a93cc689ae91997f09d67ff71a75ebc39}} 
+\#define {\bfseries LINE\+\_\+7}~7
+\item 
+\mbox{\label{_e_x_t_i_8h_a09b265946ebaaad823373902d1f45f4a}} 
+\#define {\bfseries LINE\+\_\+8}~8
+\item 
+\mbox{\label{_e_x_t_i_8h_a2bbacd84b0157b06c164142af11576d7}} 
+\#define {\bfseries LINE\+\_\+9}~9
+\item 
+\mbox{\label{_e_x_t_i_8h_a22c2fc17ad8e4cc607b49615f65b66a6}} 
+\#define {\bfseries LINE\+\_\+10}~10
+\item 
+\mbox{\label{_e_x_t_i_8h_a86b53b706e666ed69f11aab9f8b258dd}} 
+\#define {\bfseries LINE\+\_\+11}~11
+\item 
+\mbox{\label{_e_x_t_i_8h_a30683b4e60f2cf40aa72de46c22af5ba}} 
+\#define {\bfseries LINE\+\_\+12}~12
+\item 
+\mbox{\label{_e_x_t_i_8h_a05eca41e05f23b7b6dcb102c49fe3dcd}} 
+\#define {\bfseries LINE\+\_\+13}~13
+\item 
+\mbox{\label{_e_x_t_i_8h_a221cae822d63fad3aa8328fab628c652}} 
+\#define {\bfseries LINE\+\_\+14}~14
+\item 
+\mbox{\label{_e_x_t_i_8h_a973ecd5e9dd6dad2482132a3fef7d98e}} 
+\#define {\bfseries LINE\+\_\+15}~15
+\item 
+\mbox{\label{_e_x_t_i_8h_ad46c6308432f4d815f62413f2ae8fda2}} 
+\#define {\bfseries GPIOA\+\_\+\+PORT}~0b0000
+\item 
+\mbox{\label{_e_x_t_i_8h_a221e72dbb5be01aa4846db340fbd8111}} 
+\#define {\bfseries GPIOB\+\_\+\+PORT}~0b0001
+\item 
+\mbox{\label{_e_x_t_i_8h_a419bb0dcfc52fcfc9b2fad7482a169ed}} 
+\#define {\bfseries GPIOC\+\_\+\+PORT}~0b0010
+\item 
+\mbox{\label{_e_x_t_i_8h_ae99b75a02a2b4ab9dac1864a7c7dd7ff}} 
+\#define {\bfseries GPIOD\+\_\+\+PORT}~0b0011
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ EXTI\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Initialze External Interrupt. \end{DoxyCompactList}\item 
+void \textbf{ EXTI\+\_\+void\+Set\+Signal\+Latch} (uint8 Copy\+\_\+\+Exti\+\_\+\+Line, uint8 Copy\+\_\+\+EXTI\+\_\+\+Sense\+\_\+\+Mode)
+\begin{DoxyCompactList}\small\item\em Function To Change Mode And Line At Run\+Time Signal Latch == Init But Here I can Change The Line And Sense Mode. \end{DoxyCompactList}\item 
+void \textbf{ EXIT\+\_\+void\+Enable\+EXIT} (uint8 Copy\+\_\+u8\+Line)
+\begin{DoxyCompactList}\small\item\em Give The Function The Line To Enable It Int\+TERPUT. \end{DoxyCompactList}\item 
+void \textbf{ EXTI\+\_\+void\+Disable\+EXTI} (uint8 Copy\+\_\+u8\+Line)
+\begin{DoxyCompactList}\small\item\em Give The Function The Line To Disable It Int\+TERPUT. \end{DoxyCompactList}\item 
+void \textbf{ EXIT\+\_\+void\+Software\+Interrput} (uint8 Copy\+\_\+u8\+Line)
+\begin{DoxyCompactList}\small\item\em Function Make Soft\+Ware INT at Any Line If Interrput Enable (PIE) ON This Line And EXTI\+\_\+\+IMR Line Writing By \textquotesingle{}1\textquotesingle{}, When it is Set To \textquotesingle{}0\textquotesingle{} Set Corresponding Pending IMR = 1 And PR =0 FOR 0\+:15 Now You Will Have Software Trigger \& And It Clear By Put 1 At PR. \end{DoxyCompactList}\item 
+void \textbf{ EXTI0\+\_\+void\+Set\+Call\+Back} (void($\ast$ptr)(void))
+\begin{DoxyCompactList}\small\item\em Set Call\+Back Function for EXTI0. \end{DoxyCompactList}\item 
+void \textbf{ EXTI1\+\_\+void\+Set\+Call\+Back} (void($\ast$ptr)(void))
+\begin{DoxyCompactList}\small\item\em Set Call\+Back Function for EXTI1. \end{DoxyCompactList}\item 
+void \textbf{ EXTI\+\_\+void\+Set\+EXTIConfiguration} (uint8 Copy\+\_\+u8\+Exti\+Line, uint8 Copy\+\_\+u8\+Gpio\+Port\+Num)
+\begin{DoxyCompactList}\small\item\em A function to configure EXTI port and line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface file for Exernal Interrupt driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_e_x_t_i_8h_ae417d21ba1dbf585276c588a536a6f53}} 
+\index{EXTI.h@{EXTI.h}!EXIT\_voidEnableEXIT@{EXIT\_voidEnableEXIT}}
+\index{EXIT\_voidEnableEXIT@{EXIT\_voidEnableEXIT}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXIT\_voidEnableEXIT()}
+{\footnotesize\ttfamily void EXIT\+\_\+void\+Enable\+EXIT (\begin{DoxyParamCaption}\item[{uint8}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+
+
+Give The Function The Line To Enable It Int\+TERPUT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_e_x_t_i_8h_a000d84cf9d5a4084ebeac5f5ee7433e9}} 
+\index{EXTI.h@{EXTI.h}!EXIT\_voidSoftwareInterrput@{EXIT\_voidSoftwareInterrput}}
+\index{EXIT\_voidSoftwareInterrput@{EXIT\_voidSoftwareInterrput}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXIT\_voidSoftwareInterrput()}
+{\footnotesize\ttfamily void EXIT\+\_\+void\+Software\+Interrput (\begin{DoxyParamCaption}\item[{uint8}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+
+
+Function Make Soft\+Ware INT at Any Line If Interrput Enable (PIE) ON This Line And EXTI\+\_\+\+IMR Line Writing By \textquotesingle{}1\textquotesingle{}, When it is Set To \textquotesingle{}0\textquotesingle{} Set Corresponding Pending IMR = 1 And PR =0 FOR 0\+:15 Now You Will Have Software Trigger \& And It Clear By Put 1 At PR. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_e_x_t_i_8h_a42bed68f787fe83e4969ee74bdf6d387}} 
+\index{EXTI.h@{EXTI.h}!EXTI0\_voidSetCallBack@{EXTI0\_voidSetCallBack}}
+\index{EXTI0\_voidSetCallBack@{EXTI0\_voidSetCallBack}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXTI0\_voidSetCallBack()}
+{\footnotesize\ttfamily void EXTI0\+\_\+void\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{ptr }\end{DoxyParamCaption})}
+
+
+
+Set Call\+Back Function for EXTI0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & Called Function\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & Called Function \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_e_x_t_i_8h_a7f8d46104cb7a6bbc70e43c0115bbc50}} 
+\index{EXTI.h@{EXTI.h}!EXTI1\_voidSetCallBack@{EXTI1\_voidSetCallBack}}
+\index{EXTI1\_voidSetCallBack@{EXTI1\_voidSetCallBack}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXTI1\_voidSetCallBack()}
+{\footnotesize\ttfamily void EXTI1\+\_\+void\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{ptr }\end{DoxyParamCaption})}
+
+
+
+Set Call\+Back Function for EXTI1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & Called Function\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ptr} & Called Function \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_e_x_t_i_8h_a55a29bf84ef2ce876543175f404512ff}} 
+\index{EXTI.h@{EXTI.h}!EXTI\_voidDisableEXTI@{EXTI\_voidDisableEXTI}}
+\index{EXTI\_voidDisableEXTI@{EXTI\_voidDisableEXTI}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXTI\_voidDisableEXTI()}
+{\footnotesize\ttfamily void EXTI\+\_\+void\+Disable\+EXTI (\begin{DoxyParamCaption}\item[{uint8}]{Copy\+\_\+u8\+Line }\end{DoxyParamCaption})}
+
+
+
+Give The Function The Line To Disable It Int\+TERPUT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_e_x_t_i_8h_a52a16ba55a888b1b79de487e43c9caf0}} 
+\index{EXTI.h@{EXTI.h}!EXTI\_voidInit@{EXTI\_voidInit}}
+\index{EXTI\_voidInit@{EXTI\_voidInit}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXTI\_voidInit()}
+{\footnotesize\ttfamily void EXTI\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialze External Interrupt. 
+
+\mbox{\label{_e_x_t_i_8h_ab4b5bebf94fdb9eef01addf733e6791c}} 
+\index{EXTI.h@{EXTI.h}!EXTI\_voidSetEXTIConfiguration@{EXTI\_voidSetEXTIConfiguration}}
+\index{EXTI\_voidSetEXTIConfiguration@{EXTI\_voidSetEXTIConfiguration}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXTI\_voidSetEXTIConfiguration()}
+{\footnotesize\ttfamily void EXTI\+\_\+void\+Set\+EXTIConfiguration (\begin{DoxyParamCaption}\item[{uint8}]{Copy\+\_\+u8\+Exti\+Line,  }\item[{uint8}]{Copy\+\_\+u8\+Gpio\+Port\+Num }\end{DoxyParamCaption})}
+
+
+
+A function to configure EXTI port and line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Exti\+Line} & \\
+\hline
+{\em Copy\+\_\+u8\+Gpio\+Port\+Num} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Exti\+Line} & \\
+\hline
+{\em Copy\+\_\+u8\+Gpio\+Port\+Num} & \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_e_x_t_i_8h_a7f2b433e42fe626b6cb40c26aeea1538}} 
+\index{EXTI.h@{EXTI.h}!EXTI\_voidSetSignalLatch@{EXTI\_voidSetSignalLatch}}
+\index{EXTI\_voidSetSignalLatch@{EXTI\_voidSetSignalLatch}!EXTI.h@{EXTI.h}}
+\doxysubsubsection{EXTI\_voidSetSignalLatch()}
+{\footnotesize\ttfamily void EXTI\+\_\+void\+Set\+Signal\+Latch (\begin{DoxyParamCaption}\item[{uint8}]{Copy\+\_\+u8\+Line,  }\item[{uint8}]{Copy\+\_\+u8\+EXTISense\+Mode }\end{DoxyParamCaption})}
+
+
+
+Function To Change Mode And Line At Run\+Time Signal Latch == Init But Here I can Change The Line And Sense Mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+{\em Copy\+\_\+u8\+EXTISense\+Mode} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Line} & \\
+\hline
+{\em Copy\+\_\+u8\+EXTISense\+Mode} & \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,72 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/02\+\_\+\+HAL/\+DATA \+\_\+\+FRAME/\+DATA\+\_\+\+FRAME.c File Reference}
+\label{_d_a_t_a___f_r_a_m_e_8c}\index{ARM/src/00\_COTS/02\_HAL/DATA \_FRAME/DATA\_FRAME.c@{ARM/src/00\_COTS/02\_HAL/DATA \_FRAME/DATA\_FRAME.c}}
+
+
+Program file for Data Transmission Layer for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/00\+\_\+\+RCC/\+RCC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/01\+\_\+\+GPIO/\+GPIO.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../01\+\_\+\+MCAL/06\+\_\+\+UART/\+USART.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}DATA\+\_\+\+FRAME.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_d_a_t_a___f_r_a_m_e_8c_a6d858f47fb595699d5b5ba1070e2dd34}} 
+uint8 {\bfseries Calculate\+CRCHelper} (uint8 $\ast$au8\+Data, uint8 u8\+DLC)
+\item 
+void \textbf{ DATA\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Initialize Service. \end{DoxyCompactList}\item 
+void \textbf{ DATA\+\_\+void\+Send\+Data} (uint8 u8\+Message\+Id, uint8 $\ast$au8\+Data, uint8 u8\+DLC)
+\begin{DoxyCompactList}\small\item\em Send Data Frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for Data Transmission Layer for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_d_a_t_a___f_r_a_m_e_8c_a421ec96675e4a4240f2fe7b7d86c9878}} 
+\index{DATA\_FRAME.c@{DATA\_FRAME.c}!DATA\_voidInit@{DATA\_voidInit}}
+\index{DATA\_voidInit@{DATA\_voidInit}!DATA\_FRAME.c@{DATA\_FRAME.c}}
+\doxysubsubsection{DATA\_voidInit()}
+{\footnotesize\ttfamily void DATA\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Service. 
+
+\mbox{\label{_d_a_t_a___f_r_a_m_e_8c_a7edc340b3a0314f1156c4d3d52998c30}} 
+\index{DATA\_FRAME.c@{DATA\_FRAME.c}!DATA\_voidSendData@{DATA\_voidSendData}}
+\index{DATA\_voidSendData@{DATA\_voidSendData}!DATA\_FRAME.c@{DATA\_FRAME.c}}
+\doxysubsubsection{DATA\_voidSendData()}
+{\footnotesize\ttfamily void DATA\+\_\+void\+Send\+Data (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Message\+Id,  }\item[{uint8 $\ast$}]{au8\+Data,  }\item[{uint8}]{u8\+DLC }\end{DoxyParamCaption})}
+
+
+
+Send Data Frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Message\+Id} & Message ID \\
+\hline
+{\em au8\+Data} & Data \\
+\hline
+{\em u8\+DLC} & Data Length Code \\
+\hline
+\end{DoxyParams}

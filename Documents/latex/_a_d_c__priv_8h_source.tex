@@ -1,0 +1,88 @@
+\doxysection{ADC\+\_\+priv.\+h}
+\label{_a_d_c__priv_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/07\_ADC/ADC\_priv.h@{ARM/src/00\_COTS/01\_MCAL/07\_ADC/ADC\_priv.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ ADC\_PRIV\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ ADC\_PRIV\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ ADC\_BASE\_ADDRESS\ 0x40012000}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ ADC\_ENABLE\ \ \ \ 1}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ ADC\_DISABLE\ \ \ 0}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ ADC\_RESOLUTION\_12BIT\ \ \ 0b00}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ ADC\_RESOLUTION\_10BIT\ \ \ 0b01}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ ADC\_RESOLUTION\_8BIT\ \ \ \ 0b10}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ ADC\_RESOLUTION\_6BIT\ \ \ \ 0b11}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ ADC\_RIGHT\_ALLIGNMENT\ \ \ \ \ 0}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ ADC\_LEFT\_ALLIGNMENT\ \ \ \ \ \ 1}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ ADC\_AFTER\_REGULAR\_CHANNELS\ \ \ \ 0}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ ADC\_AFTER\_EACH\_CONVERSION\ \ \ \ \ 1}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ ADC\_DMA\_SINGLE\_COPY\ \ \ 0}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ ADC\_DMA\_FREE\_RUNNING\_COPY\ \ \ 1}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ ADC\_SINGLE\_SHOT\ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ ADC\_CONTINOUS\ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_3\_CYCLES\ \ \ \ \ \ \ \ 0b000}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_15\_CYCLES\ \ \ \ \ \ \ 0b001}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_28\_CYCLES\ \ \ \ \ \ \ 0b010}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_56\_CYCLES\ \ \ \ \ \ \ 0b011}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_84\_CYCLES\ \ \ \ \ \ \ 0b100}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_112\_CYCLES\ \ \ \ \ \ 0b101}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_144\_CYCLES\ \ \ \ \ \ 0b110}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ ADC\_SAMPLE\_480\_CYCLES\ \ \ \ \ \ 0b111}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_0\ \ \ \ \ 0}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_1\ \ \ \ \ 1}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_2\ \ \ \ \ 2}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_3\ \ \ \ \ 3}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_4\ \ \ \ \ 4}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_5\ \ \ \ \ 5}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_6\ \ \ \ \ 6}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ ADC\_CHANELL\_7\ \ \ \ \ 7}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SR;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CR1;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CR2;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SMPR1;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SMPR2;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JOFR1;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JOFR2;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JOFR3;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JOFR4;}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ HTR;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ LTR;}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SQR1;}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SQR2;}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SQR3;}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JSQR;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JDR1;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JDR2;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JDR3;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ JDR4;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ DR;}
+\DoxyCodeLine{00077\ \}\ ADC\_MemMap;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CSR;}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CCR;}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CDR;}
+\DoxyCodeLine{00084\ \}ADC\_Common\_reg;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#define\ ADC\ ((volatile\ ADC\_MemMap*\ )\ (ADC\_BASE\_ADDRESS))}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#define\ ADC\_COMMON\ ((volatile\ ADC\_Common\_reg*\ )(ADC\_BASE\_ADDRESS\ +\ 0x300))}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

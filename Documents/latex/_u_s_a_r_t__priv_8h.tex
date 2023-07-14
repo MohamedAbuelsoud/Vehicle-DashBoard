@@ -1,0 +1,107 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/06\+\_\+\+UART/\+USART\+\_\+priv.h File Reference}
+\label{_u_s_a_r_t__priv_8h}\index{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART\_priv.h@{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART\_priv.h}}
+
+
+Private file for USART driver for stm32f401cc.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ UART\+\_\+\+MR}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_aa9ef542a8b01114927593bde740e90e1}} 
+\#define {\bfseries USART\+\_\+\+ENABLE}~1
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_ad93e1fc4dd3d26ada926b8f27c543f67}} 
+\#define {\bfseries USART\+\_\+\+DISABLE}~0
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a6c3a5126c692bce97cd22b162e88311c}} 
+\#define {\bfseries USART\+\_\+8\+\_\+\+BIT}~0
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_ac66fb9a7168f6df4d1bc326564fe3e21}} 
+\#define {\bfseries USART\+\_\+9\+\_\+\+BIT}~1
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a7e8f61a93a418ccd63f0baf81a1b7a6d}} 
+\#define {\bfseries USART\+\_\+\+EEVN\+\_\+\+PARITY}~0
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_ae5d244f72f291b826d489fdfd929f968}} 
+\#define {\bfseries USART\+\_\+\+ODD\+\_\+\+PARITY}~1
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a482454d84d05960b13fc92db82f4fc8a}} 
+\#define {\bfseries USART\+\_\+\+OVER\+\_\+\+SAMPLING\+\_\+16}~0
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a81cff758b2b67d615b73c51d406753b4}} 
+\#define {\bfseries USART\+\_\+\+OVER\+\_\+\+SAMPLING\+\_\+8}~1
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_aa82be4ad83cf8163d641dd0643950367}} 
+\#define {\bfseries STOP\+\_\+1}~0b00
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a62ae924c51806ad3cf636e718da40664}} 
+\#define {\bfseries STOP\+\_\+2}~0b10
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a4b60a388c1fdd233e2c32ed61110eeb4}} 
+\#define {\bfseries USART\+\_\+\+SYNCHRONOUS}~1
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a9cc299bcd4a421f9df3b34e1965b5972}} 
+\#define {\bfseries USART\+\_\+\+ASYNCHRONOUS}~0
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a9284b8ee7bb4640d273668d9a103e3d8}} 
+\#define {\bfseries B\+\_\+1200}~0x44505400
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a74e6043cf8e3c5487060d74cf0a078d9}} 
+\#define {\bfseries B\+\_\+2400}~0x43d05800
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a7092d219e70f60606459a74b67cfb282}} 
+\#define {\bfseries B\+\_\+9600}~0x683
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a37b4af1949b7474f02e3e55ea77c4cb9}} 
+\#define {\bfseries B\+\_\+19200}~0x42504000
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a8562b0d2b30069c5cdea36f69f041fdf}} 
+\#define {\bfseries B\+\_\+38400}~0x41d08000
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a6d8b65e5051c89d90b69adc40987b5a6}} 
+\#define {\bfseries B\+\_\+57600}~0x418b0000
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a44b1ee452eeb83e2cd028b004c4f149d}} 
+\#define {\bfseries B\+\_\+115200}~0x410b0000
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_ab4fe2cb41dcc9d652b033f2e0a89d44b}} 
+\#define {\bfseries USART1\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40011000
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a4845766e4b9aa8b3c91bbf4a71652106}} 
+\#define {\bfseries USART2\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40004400
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a9df7340f186b0dea97f421c10936f608}} 
+\#define {\bfseries USART6\+\_\+\+BASE\+\_\+\+ADDRESS}~0x40011400
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a86a11da461f6db4be89756ea84aff214}} 
+\#define {\bfseries USART\+\_\+1}~((volatile \textbf{ UART\+\_\+\+MR} $\ast$ ) USART1\+\_\+\+BASE\+\_\+\+ADDRESS)
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a09a72a090e6f05ff1a23ec372f421da6}} 
+\#define {\bfseries USART\+\_\+2}~((volatile \textbf{ UART\+\_\+\+MR} $\ast$ ) USART1\+\_\+\+BASE\+\_\+\+ADDRESS)
+\item 
+\mbox{\label{_u_s_a_r_t__priv_8h_a862b3d55712879cd7e3b85c36f24d366}} 
+\#define {\bfseries USART\+\_\+6}~((volatile \textbf{ UART\+\_\+\+MR} $\ast$ ) USART6\+\_\+\+BASE\+\_\+\+ADDRESS)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Private file for USART driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

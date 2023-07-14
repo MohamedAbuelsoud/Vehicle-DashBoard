@@ -1,0 +1,134 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/02\+\_\+\+SYSTICK/\+SYSTICK.c File Reference}
+\label{_s_y_s_t_i_c_k_8c}\index{ARM/src/00\_COTS/01\_MCAL/02\_SYSTICK/SYSTICK.c@{ARM/src/00\_COTS/01\_MCAL/02\_SYSTICK/SYSTICK.c}}
+
+
+Program file for systick driver for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SYSTICK.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SYSTICK\+\_\+\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SYSTICK\+\_\+\+Priv.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Sys\+Tick\+\_\+\+Handler} (void)
+\begin{DoxyCompactList}\small\item\em Systick ISR. \end{DoxyCompactList}\item 
+void \textbf{ STK\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Systick Initialization function. \end{DoxyCompactList}\item 
+void \textbf{ STK\+\_\+void\+Start} (uint32 Copy\+\_\+\+Preload\+Value)
+\begin{DoxyCompactList}\small\item\em Systick timer start function. \end{DoxyCompactList}\item 
+void \textbf{ STK\+\_\+void\+INTStatus} (uint8 Copy\+\_\+u8\+Status)
+\begin{DoxyCompactList}\small\item\em Systick Interrupt Enable/\+Disable function. \end{DoxyCompactList}\item 
+uint8 \textbf{ MSTK\+\_\+u8\+Read\+Flag} (void)
+\begin{DoxyCompactList}\small\item\em function to read Systick flag \end{DoxyCompactList}\item 
+void \textbf{ STK\+\_\+void\+Set\+Call\+Back} (pf Stk\+Call\+Back)
+\begin{DoxyCompactList}\small\item\em Set callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_s_y_s_t_i_c_k_8c_a243c981f41d7ee60bbb34c9a94486af7}} 
+pf {\bfseries STK\+\_\+\+Call\+Back} = NULL\+\_\+\+PTR
+\item 
+\mbox{\label{_s_y_s_t_i_c_k_8c_af0ed1604dbb8d23c5d808dc2589dbaf4}} 
+uint32 {\bfseries Flag} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for systick driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_s_y_s_t_i_c_k_8c_a7b6d800bd20f531ce6b7f3d7efefa328}} 
+\index{SYSTICK.c@{SYSTICK.c}!MSTK\_u8ReadFlag@{MSTK\_u8ReadFlag}}
+\index{MSTK\_u8ReadFlag@{MSTK\_u8ReadFlag}!SYSTICK.c@{SYSTICK.c}}
+\doxysubsubsection{MSTK\_u8ReadFlag()}
+{\footnotesize\ttfamily uint8 MSTK\+\_\+u8\+Read\+Flag (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+function to read Systick flag 
+
+\begin{DoxyReturn}{Returns}
+uint8 Systick flag 
+\end{DoxyReturn}
+\mbox{\label{_s_y_s_t_i_c_k_8c_a013ece82ec9a3022a351e5a053cddab7}} 
+\index{SYSTICK.c@{SYSTICK.c}!STK\_voidInit@{STK\_voidInit}}
+\index{STK\_voidInit@{STK\_voidInit}!SYSTICK.c@{SYSTICK.c}}
+\doxysubsubsection{STK\_voidInit()}
+{\footnotesize\ttfamily void STK\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Systick Initialization function. 
+
+\mbox{\label{_s_y_s_t_i_c_k_8c_ac8e9f9e5e9cb7008d6f5de0f11597666}} 
+\index{SYSTICK.c@{SYSTICK.c}!STK\_voidINTStatus@{STK\_voidINTStatus}}
+\index{STK\_voidINTStatus@{STK\_voidINTStatus}!SYSTICK.c@{SYSTICK.c}}
+\doxysubsubsection{STK\_voidINTStatus()}
+{\footnotesize\ttfamily void STK\+\_\+void\+INTStatus (\begin{DoxyParamCaption}\item[{uint8}]{Copy\+\_\+u8\+Status }\end{DoxyParamCaption})}
+
+
+
+Systick Interrupt Enable/\+Disable function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+u8\+Status} & Enable/\+Disable Systick Interrupt \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_s_y_s_t_i_c_k_8c_a4663d373222e3b606f14317bd58652b6}} 
+\index{SYSTICK.c@{SYSTICK.c}!STK\_voidSetCallBack@{STK\_voidSetCallBack}}
+\index{STK\_voidSetCallBack@{STK\_voidSetCallBack}!SYSTICK.c@{SYSTICK.c}}
+\doxysubsubsection{STK\_voidSetCallBack()}
+{\footnotesize\ttfamily void STK\+\_\+void\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{pf}]{Stk\+Call\+Back }\end{DoxyParamCaption})}
+
+
+
+Set callback function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Stk\+Call\+Back} & function to be called \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_s_y_s_t_i_c_k_8c_aa5eb403f2eea8d58320d9294642cb65d}} 
+\index{SYSTICK.c@{SYSTICK.c}!STK\_voidStart@{STK\_voidStart}}
+\index{STK\_voidStart@{STK\_voidStart}!SYSTICK.c@{SYSTICK.c}}
+\doxysubsubsection{STK\_voidStart()}
+{\footnotesize\ttfamily void STK\+\_\+void\+Start (\begin{DoxyParamCaption}\item[{uint32}]{Copy\+\_\+\+Preload\+Value }\end{DoxyParamCaption})}
+
+
+
+Systick timer start function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Copy\+\_\+\+Preload\+Value} & timer preload value \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_s_y_s_t_i_c_k_8c_ab5e09814056d617c521549e542639b7e}} 
+\index{SYSTICK.c@{SYSTICK.c}!SysTick\_Handler@{SysTick\_Handler}}
+\index{SysTick\_Handler@{SysTick\_Handler}!SYSTICK.c@{SYSTICK.c}}
+\doxysubsubsection{SysTick\_Handler()}
+{\footnotesize\ttfamily void Sys\+Tick\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Systick ISR. 
+

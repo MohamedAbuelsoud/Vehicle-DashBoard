@@ -1,0 +1,130 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/07\+\_\+\+ADC/\+ADC.c File Reference}
+\label{_a_d_c_8c}\index{ARM/src/00\_COTS/01\_MCAL/07\_ADC/ADC.c@{ARM/src/00\_COTS/01\_MCAL/07\_ADC/ADC.c}}
+
+
+Program file for ADC driver for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+MATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../07\+\_\+\+ADC/\+ADC.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../07\+\_\+\+ADC/\+ADC\+\_\+priv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../07\+\_\+\+ADC/\+ADC\+\_\+cfg.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ ADC\+\_\+void\+Init} (void)
+\begin{DoxyCompactList}\small\item\em ADC Initialization. \end{DoxyCompactList}\item 
+void \textbf{ ADC\+\_\+void\+Start\+Conversion} (void)
+\begin{DoxyCompactList}\small\item\em Start ADC Conversion. \end{DoxyCompactList}\item 
+void \textbf{ ADC\+\_\+void\+Stop\+Conversion} (void)
+\begin{DoxyCompactList}\small\item\em Stop ADC Conversion. \end{DoxyCompactList}\item 
+uint32 \textbf{ ADC\+\_\+u16\+Read} (void)
+\begin{DoxyCompactList}\small\item\em Read Converted Signal. \end{DoxyCompactList}\item 
+uint32 $\ast$ \textbf{ ADC\+\_\+u32\+Get\+Data\+Address} (void)
+\begin{DoxyCompactList}\small\item\em Get Data Address. \end{DoxyCompactList}\item 
+void \textbf{ ADC\+\_\+void\+Set\+Call\+Back} (pf pf\+ADCSet\+ISR)
+\begin{DoxyCompactList}\small\item\em Set Callback Function. \end{DoxyCompactList}\item 
+void \textbf{ ADC\+\_\+\+IRQHandler} (void)
+\begin{DoxyCompactList}\small\item\em ADC IRQ Handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Program file for ADC driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_a_d_c_8c_a06406eadf297fa89a6eaf9586b227a69}} 
+\index{ADC.c@{ADC.c}!ADC\_IRQHandler@{ADC\_IRQHandler}}
+\index{ADC\_IRQHandler@{ADC\_IRQHandler}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_IRQHandler()}
+{\footnotesize\ttfamily void ADC\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ADC IRQ Handler. 
+
+\mbox{\label{_a_d_c_8c_ae6407d8f3edcb80665cab354b40c18e2}} 
+\index{ADC.c@{ADC.c}!ADC\_u16Read@{ADC\_u16Read}}
+\index{ADC\_u16Read@{ADC\_u16Read}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_u16Read()}
+{\footnotesize\ttfamily uint32 ADC\+\_\+u16\+Read (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Read Converted Signal. 
+
+\begin{DoxyReturn}{Returns}
+uint32 
+\end{DoxyReturn}
+\mbox{\label{_a_d_c_8c_ac7204d9e4808f4cb379da016998b836b}} 
+\index{ADC.c@{ADC.c}!ADC\_u32GetDataAddress@{ADC\_u32GetDataAddress}}
+\index{ADC\_u32GetDataAddress@{ADC\_u32GetDataAddress}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_u32GetDataAddress()}
+{\footnotesize\ttfamily uint32 $\ast$ ADC\+\_\+u32\+Get\+Data\+Address (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get Data Address. 
+
+\begin{DoxyReturn}{Returns}
+uint32$\ast$ Data Address 
+\end{DoxyReturn}
+\mbox{\label{_a_d_c_8c_ad8e5dfad0dc1800a2a93870427dd2396}} 
+\index{ADC.c@{ADC.c}!ADC\_voidInit@{ADC\_voidInit}}
+\index{ADC\_voidInit@{ADC\_voidInit}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_voidInit()}
+{\footnotesize\ttfamily void ADC\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+ADC Initialization. 
+
+\mbox{\label{_a_d_c_8c_a2088dd89164cac8c98f4af603e0c672b}} 
+\index{ADC.c@{ADC.c}!ADC\_voidSetCallBack@{ADC\_voidSetCallBack}}
+\index{ADC\_voidSetCallBack@{ADC\_voidSetCallBack}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_voidSetCallBack()}
+{\footnotesize\ttfamily void ADC\+\_\+void\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{pf}]{pf\+ADCSet\+ISR }\end{DoxyParamCaption})}
+
+
+
+Set Callback Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pf\+ADCSet\+ISR} & Called Function \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_a_d_c_8c_a1cd475a1b1d03bc4348808a9c059b168}} 
+\index{ADC.c@{ADC.c}!ADC\_voidStartConversion@{ADC\_voidStartConversion}}
+\index{ADC\_voidStartConversion@{ADC\_voidStartConversion}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_voidStartConversion()}
+{\footnotesize\ttfamily void ADC\+\_\+void\+Start\+Conversion (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Start ADC Conversion. 
+
+\mbox{\label{_a_d_c_8c_a53bedf4a4a15a50ec03c740b7a12bd9d}} 
+\index{ADC.c@{ADC.c}!ADC\_voidStopConversion@{ADC\_voidStopConversion}}
+\index{ADC\_voidStopConversion@{ADC\_voidStopConversion}!ADC.c@{ADC.c}}
+\doxysubsubsection{ADC\_voidStopConversion()}
+{\footnotesize\ttfamily void ADC\+\_\+void\+Stop\+Conversion (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Stop ADC Conversion. 
+

@@ -1,0 +1,116 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/05\+\_\+\+DMA/\+DMA.h File Reference}
+\label{_d_m_a_8h}\index{ARM/src/00\_COTS/01\_MCAL/05\_DMA/DMA.h@{ARM/src/00\_COTS/01\_MCAL/05\_DMA/DMA.h}}
+
+
+Interface file for \doxyref{DMA}{p.}{struct_d_m_a} driver for stm32f401cc.  
+
+
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+STD\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../00\+\_\+\+LIB/\+BIT\+\_\+\+Math.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ DMA\+\_\+void\+Init} (uint8 u8\+Sream\+IDCpy)
+\begin{DoxyCompactList}\small\item\em Initialize \doxyref{DMA}{p.}{struct_d_m_a}. \end{DoxyCompactList}\item 
+void \textbf{ DMA\+\_\+void\+Set\+Address} (uint32 $\ast$pu32\+Peri\+Reg, uint32 $\ast$pu32\+Data\+Reg, uint32 u32\+Size\+Cpy, uint8 u8\+Sream\+IDCpy)
+\begin{DoxyCompactList}\small\item\em Set Address. \end{DoxyCompactList}\item 
+void \textbf{ DMA\+\_\+void\+Stream\+Enable} (uint8 u8\+Sream\+IDCpy)
+\begin{DoxyCompactList}\small\item\em Enable Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface file for \doxyref{DMA}{p.}{struct_d_m_a} driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\label{_d_m_a_8h_ab3f3c0a65f059398f49dfbcd4b0f0941}} 
+\index{DMA.h@{DMA.h}!DMA\_voidInit@{DMA\_voidInit}}
+\index{DMA\_voidInit@{DMA\_voidInit}!DMA.h@{DMA.h}}
+\doxysubsubsection{DMA\_voidInit()}
+{\footnotesize\ttfamily void DMA\+\_\+void\+Init (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Sream\+IDCpy }\end{DoxyParamCaption})}
+
+
+
+Initialize \doxyref{DMA}{p.}{struct_d_m_a}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Sream\+IDCpy} & Stream ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Sream\+IDCpy} & Stream ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_d_m_a_8h_a836596c79c86d8dc7ebe86b7a84ae064}} 
+\index{DMA.h@{DMA.h}!DMA\_voidSetAddress@{DMA\_voidSetAddress}}
+\index{DMA\_voidSetAddress@{DMA\_voidSetAddress}!DMA.h@{DMA.h}}
+\doxysubsubsection{DMA\_voidSetAddress()}
+{\footnotesize\ttfamily void DMA\+\_\+void\+Set\+Address (\begin{DoxyParamCaption}\item[{uint32 $\ast$}]{pu32\+Peri\+Reg,  }\item[{uint32 $\ast$}]{pu32\+Data\+Reg,  }\item[{uint32}]{u32\+Size\+Cpy,  }\item[{uint8}]{u8\+Sream\+IDCpy }\end{DoxyParamCaption})}
+
+
+
+Set Address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu32\+Peri\+Reg} & Pripheral Register \\
+\hline
+{\em pu32\+Data\+Reg} & Data Register \\
+\hline
+{\em u32\+Size\+Cpy} & Size \\
+\hline
+{\em u8\+Sream\+IDCpy} & Stream ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em pu32\+Peri\+Reg} & Pripheral Register \\
+\hline
+{\em pu32\+Data\+Reg} & Data Register \\
+\hline
+{\em u32\+Size\+Cpy} & Size \\
+\hline
+{\em u8\+Sream\+IDCpy} & Stream ID \\
+\hline
+\end{DoxyParams}
+\mbox{\label{_d_m_a_8h_ae7aed77f1964f7c5edbb21c315e424a3}} 
+\index{DMA.h@{DMA.h}!DMA\_voidStreamEnable@{DMA\_voidStreamEnable}}
+\index{DMA\_voidStreamEnable@{DMA\_voidStreamEnable}!DMA.h@{DMA.h}}
+\doxysubsubsection{DMA\_voidStreamEnable()}
+{\footnotesize\ttfamily void DMA\+\_\+void\+Stream\+Enable (\begin{DoxyParamCaption}\item[{uint8}]{u8\+Sream\+IDCpy }\end{DoxyParamCaption})}
+
+
+
+Enable Stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Sream\+IDCpy} & Stream ID\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em u8\+Sream\+IDCpy} & Stream ID \\
+\hline
+\end{DoxyParams}

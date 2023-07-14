@@ -1,0 +1,36 @@
+\doxysection{GPIO\+\_\+priv.\+h}
+\label{_g_p_i_o__priv_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO\_priv.h@{ARM/src/00\_COTS/01\_MCAL/01\_GPIO/GPIO\_priv.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ GPIO\_PRIV\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ GPIO\_PRIV\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ GBIO\_A\_BASE\_ADDRESS\ \ \ \ \ \ 0x40020000}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ GBIO\_B\_BASE\_ADDRESS\ \ \ \ \ \ 0x40020400}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ GBIO\_C\_BASE\_ADDRESS\ \ \ \ \ \ 0x40020800}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ MODER;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ OTYPER;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ OSPEEDR;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ PUPDR;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ IDR;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ ODR;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ BSRR;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ LCKR;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ AFRL;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ AFRh;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \}GPIO\_MemMaP;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ GPIOA\ \ \ \ ((volatile\ GPIO\_MemMaP\ *)\ GBIO\_A\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ GPIOB\ \ \ \ ((volatile\ GPIO\_MemMaP\ *)\ GBIO\_B\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ GPIOC\ \ \ \ ((volatile\ GPIO\_MemMaP\ *)\ GBIO\_C\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,121 @@
+\doxysection{Raspberry PI/\+GUI/widget.cpp File Reference}
+\label{widget_8cpp}\index{Raspberry PI/GUI/widget.cpp@{Raspberry PI/GUI/widget.cpp}}
+
+
+module is responsible for data visualization. It uses QT frame work. First we designed the GUI structure and appearance and added the required objects then we added a timer as a signal to call a slot regularly. The slot is (Widgetvid\+Update\+Values) a function that updates data in GUI according to reading variables updated from UART module.  
+
+
+{\ttfamily \#include \char`\"{}widget.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ui\+\_\+widget.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QLabel$>$}\newline
+{\ttfamily \#include $<$QTimer$>$}\newline
+{\ttfamily \#include $<$QString$>$}\newline
+{\ttfamily \#include $<$QPainter$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+t \textbf{ thread1}
+\begin{DoxyCompactList}\small\item\em thread1 to run UART function on other thread \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Speed\+Value} =0
+\begin{DoxyCompactList}\small\item\em Variable resembles speed. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Temp\+Value} =0
+\begin{DoxyCompactList}\small\item\em Variable resembles temperature. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Battery\+Value} =0
+\begin{DoxyCompactList}\small\item\em Variable resembles battery. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Fuel\+Value} =0
+\begin{DoxyCompactList}\small\item\em Variable resembles fuel. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Anti\+Lock\+Flag} =0
+\begin{DoxyCompactList}\small\item\em Variable resembles antilock flag. \end{DoxyCompactList}\item 
+uint8 \textbf{ u8\+Seat\+Belt\+Flag} =0
+\begin{DoxyCompactList}\small\item\em Variable resembles seatbelt flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+module is responsible for data visualization. It uses QT frame work. First we designed the GUI structure and appearance and added the required objects then we added a timer as a signal to call a slot regularly. The slot is (Widgetvid\+Update\+Values) a function that updates data in GUI according to reading variables updated from UART module. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\label{widget_8cpp_a5ee2fa16b0442aa60586ebaaa1d7b2d6}} 
+\index{widget.cpp@{widget.cpp}!thread1@{thread1}}
+\index{thread1@{thread1}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{thread1}
+{\footnotesize\ttfamily pthread\+\_\+t thread1\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+thread1 to run UART function on other thread 
+
+\mbox{\label{widget_8cpp_a16b12d1be1e810e66d16fa2c41c0a310}} 
+\index{widget.cpp@{widget.cpp}!u8AntiLockFlag@{u8AntiLockFlag}}
+\index{u8AntiLockFlag@{u8AntiLockFlag}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{u8AntiLockFlag}
+{\footnotesize\ttfamily uint8 u8\+Anti\+Lock\+Flag =0}
+
+
+
+Variable resembles antilock flag. 
+
+\mbox{\label{widget_8cpp_a9d9e31ad48728880322160d4c494812b}} 
+\index{widget.cpp@{widget.cpp}!u8BatteryValue@{u8BatteryValue}}
+\index{u8BatteryValue@{u8BatteryValue}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{u8BatteryValue}
+{\footnotesize\ttfamily uint8 u8\+Battery\+Value =0}
+
+
+
+Variable resembles battery. 
+
+\mbox{\label{widget_8cpp_a1e6e75d4fe5d7d15953545b0022819c4}} 
+\index{widget.cpp@{widget.cpp}!u8FuelValue@{u8FuelValue}}
+\index{u8FuelValue@{u8FuelValue}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{u8FuelValue}
+{\footnotesize\ttfamily uint8 u8\+Fuel\+Value =0}
+
+
+
+Variable resembles fuel. 
+
+\mbox{\label{widget_8cpp_aca6403148b03b4d90a94e2390ce00ecd}} 
+\index{widget.cpp@{widget.cpp}!u8SeatBeltFlag@{u8SeatBeltFlag}}
+\index{u8SeatBeltFlag@{u8SeatBeltFlag}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{u8SeatBeltFlag}
+{\footnotesize\ttfamily uint8 u8\+Seat\+Belt\+Flag =0}
+
+
+
+Variable resembles seatbelt flag. 
+
+\mbox{\label{widget_8cpp_a5694b2ca2299d3762c50d94b12da1291}} 
+\index{widget.cpp@{widget.cpp}!u8SpeedValue@{u8SpeedValue}}
+\index{u8SpeedValue@{u8SpeedValue}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{u8SpeedValue}
+{\footnotesize\ttfamily uint8 u8\+Speed\+Value =0}
+
+
+
+Variable resembles speed. 
+
+\mbox{\label{widget_8cpp_a35da1bc644661b577f9e9191651b5506}} 
+\index{widget.cpp@{widget.cpp}!u8TempValue@{u8TempValue}}
+\index{u8TempValue@{u8TempValue}!widget.cpp@{widget.cpp}}
+\doxysubsubsection{u8TempValue}
+{\footnotesize\ttfamily uint8 u8\+Temp\+Value =0}
+
+
+
+Variable resembles temperature. 
+

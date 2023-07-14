@@ -1,0 +1,44 @@
+\doxysection{ARM/src/00\+\_\+\+COTS/01\+\_\+\+MCAL/03\+\_\+\+NVIC/\+NVIC\+\_\+\+Priv.h File Reference}
+\label{_n_v_i_c___priv_8h}\index{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC\_Priv.h@{ARM/src/00\_COTS/01\_MCAL/03\_NVIC/NVIC\_Priv.h}}
+
+
+Private file for NVIC driver for stm32f401cc.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ NVIC\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{_n_v_i_c___priv_8h_a34bb69bb1cf664ded3f70c7c70076046}} 
+\#define {\bfseries NVIC\+\_\+\+BASE\+\_\+\+ADDRESS}~0x\+E000\+E100
+\item 
+\mbox{\label{_n_v_i_c___priv_8h_ae1d4040517532e0ae1af0dc6874be5e5}} 
+\#define {\bfseries NVIC\+\_\+\+REG}~((volatile \textbf{ NVIC\+\_\+t}$\ast$)(NVIC\+\_\+\+BASE\+\_\+\+ADDRESS))
+\item 
+\mbox{\label{_n_v_i_c___priv_8h_afb55c4d149b907fe569a1d8bb31cade1}} 
+\#define {\bfseries SCB\+\_\+\+AIRCR}~($\ast$(volatile uint32$\ast$) 0x\+E000\+ED0C)
+\item 
+\mbox{\label{_n_v_i_c___priv_8h_aa3f3cf413ef77cab01141498daf57e1b}} 
+\#define {\bfseries VECTKEY}~0x05\+FA0000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Private file for NVIC driver for stm32f401cc. 
+
+\begin{DoxyAuthor}{Author}
+G3\+\_\+\+Dash\+Board\+\_\+\+Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}

@@ -1,0 +1,62 @@
+\doxysection{USART\+\_\+priv.\+h}
+\label{_u_s_a_r_t__priv_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART\_priv.h@{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART\_priv.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ USART\_PRIV\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ USART\_PRIV\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ USART\_ENABLE\ \ \ \ \ 1}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ USART\_DISABLE\ \ \ \ 0}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ USART\_8\_BIT\ \ \ 0}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ USART\_9\_BIT\ \ \ 1}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ USART\_EEVN\_PARITY\ \ \ 0}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ USART\_ODD\_PARITY\ \ \ \ 1}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ USART\_OVER\_SAMPLING\_16\ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ USART\_OVER\_SAMPLING\_8\ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#define\ STOP\_1\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0b00}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#define\ STOP\_2\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 0b10}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ USART\_SYNCHRONOUS\ \ \ \ \ 1}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ USART\_ASYNCHRONOUS\ \ \ \ 0}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ \ \ B\_1200\ \ \ \ 0x44505400}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ \ \ B\_2400\ \ \ \ 0x43d05800}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#define\ \ \ B\_9600\ \ \ \ 0x683}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ \ \ B\_19200\ \ \ 0x42504000}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#define\ \ \ B\_38400\ \ \ 0x41d08000}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#define\ \ \ B\_57600\ \ \ 0x418b0000}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#define\ \ \ B\_115200\ \ 0x410b0000}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#define\ USART1\_BASE\_ADDRESS\ 0x40011000}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#define\ USART2\_BASE\_ADDRESS\ 0x40004400}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#define\ USART6\_BASE\_ADDRESS\ 0x40011400}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ SR;}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ DR;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ BRR;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CR1;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CR2;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ CR3;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{volatile}\ uint32\ GTPR;}
+\DoxyCodeLine{00057\ \}UART\_MR;}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ USART\_1\ \ \ ((volatile\ UART\_MR\ *\ )\ USART1\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ USART\_2\ \ \ ((volatile\ UART\_MR\ *\ )\ USART1\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#define\ USART\_6\ \ \ ((volatile\ UART\_MR\ *\ )\ USART6\_BASE\_ADDRESS)}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00067\ }
+
+\end{DoxyCode}

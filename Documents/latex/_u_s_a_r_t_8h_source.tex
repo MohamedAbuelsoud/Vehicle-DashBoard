@@ -1,0 +1,39 @@
+\doxysection{USART.\+h}
+\label{_u_s_a_r_t_8h_source}\index{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART.h@{ARM/src/00\_COTS/01\_MCAL/06\_UART/USART.h}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ USART\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ USART\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{void}\ USART\_voidInit(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ USART\_enuGetDataByte(uint8\ u8IndexCPY,\ uint8*\ pu16DataCpy);}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ USART\_voidSendDataByte(uint8\ u8IndexCPY,\ uint8\ u16DataCpy);}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ USART\_enuGetDataString(uint8\ u8IndexCPY,\ uint16*\ pu16DataCpy\ ,uint8\ u8Size);}
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ USART\_voidSendDataString(uint8\ u8IndexCPY,\ uint8*\ u16DataCpy,\ uint8\ u8Size);}
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{void}\ USART\_voidEnable(uint8\ u8IndexCPY);}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ USART\_voidDisable(uint8\ u8IndexCPY);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00067\ \textcolor{comment}{void\ USART\_voidEnableRXCompInt(void);}}
+\DoxyCodeLine{00068\ \textcolor{comment}{void\ USART\_voidDisableRXCompInt(void);}}
+\DoxyCodeLine{00069\ \textcolor{comment}{}}
+\DoxyCodeLine{00070\ \textcolor{comment}{}}
+\DoxyCodeLine{00071\ \textcolor{comment}{void\ USART\_voidEnableTXCompInt(void);}}
+\DoxyCodeLine{00072\ \textcolor{comment}{void\ USART\_voidDisableTXCompInt(void);}}
+\DoxyCodeLine{00073\ \textcolor{comment}{}}
+\DoxyCodeLine{00074\ \textcolor{comment}{void\ USART\_voidEnableDataRegFreeInt(void);}}
+\DoxyCodeLine{00075\ \textcolor{comment}{void\ USART\_voidDisableDataRegFreeInt(void);}}
+\DoxyCodeLine{00076\ \textcolor{comment}{}}
+\DoxyCodeLine{00077\ \textcolor{comment}{void\ USART\_voidTxCompSetCallBack(pf\ pfTxCompCpy);}}
+\DoxyCodeLine{00078\ \textcolor{comment}{void\ USART\_voidRxCompSetCallBack(pfU16\ pfRxCompCpy);}}
+\DoxyCodeLine{00079\ \textcolor{comment}{void\ USART\_voidTxEmptySetCallBack(pfU16\ pfTxEmptyCpy);}}
+\DoxyCodeLine{00080\ \textcolor{comment}{}}
+\DoxyCodeLine{00081\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00084\ }
+
+\end{DoxyCode}
